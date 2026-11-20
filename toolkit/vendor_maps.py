@@ -145,6 +145,42 @@ VENDOR_TAXONOMY = {
                 "tab": "Boot",
                 "path": "Boot -> Fast Boot",
                 "target": "Disabled"
+            },
+            "cppc": {
+                "name": "CPPC",
+                "tab": "Advanced",
+                "path": "Advanced -> AMD CBS -> CPU Common Options -> CPPC",
+                "target": "Enabled"
+            },
+            "cppc_pref": {
+                "name": "CPPC Preferred Cores",
+                "tab": "Advanced",
+                "path": "Advanced -> AMD CBS -> CPU Common Options -> CPPC Preferred Cores",
+                "target": "Enabled"
+            },
+            "gdm": {
+                "name": "Gear Down Mode",
+                "tab": "OC Tweaker",
+                "path": "OC Tweaker -> DRAM Timing Configuration -> Gear Down Mode",
+                "target": "Enabled"
+            },
+            "cppc": {
+                "name": "CPPC",
+                "tab": "Advanced",
+                "path": "Advanced -> AMD CBS -> NBIO Common Options -> SMU Common Options -> CPPC",
+                "target": "Enabled"
+            },
+            "cppc_pref": {
+                "name": "CPPC Preferred Cores",
+                "tab": "Advanced",
+                "path": "Advanced -> AMD CBS -> NBIO Common Options -> SMU Common Options -> CPPC Preferred Cores",
+                "target": "Enabled"
+            },
+            "gdm": {
+                "name": "Gear Down Mode",
+                "tab": "Ai Tweaker",
+                "path": "Ai Tweaker -> DRAM Timing Control -> Gear Down Mode",
+                "target": "Enabled"
             }
         }
     },
@@ -215,6 +251,24 @@ VENDOR_TAXONOMY = {
                 "tab": "Settings",
                 "path": "Settings -> Boot -> MSI Fast Boot",
                 "target": "Disabled"
+            },
+            "cppc": {
+                "name": "CPPC",
+                "tab": "OC",
+                "path": "OC -> Advanced CPU Configuration -> AMD CBS -> CPU Common Options -> CPPC",
+                "target": "Enabled"
+            },
+            "cppc_pref": {
+                "name": "CPPC Preferred Cores",
+                "tab": "OC",
+                "path": "OC -> Advanced CPU Configuration -> AMD CBS -> CPU Common Options -> CPPC Preferred Cores",
+                "target": "Enabled"
+            },
+            "gdm": {
+                "name": "Gear Down Mode",
+                "tab": "OC",
+                "path": "OC -> Advanced DRAM Configuration -> Gear Down Mode",
+                "target": "Enabled"
             }
         }
     },
@@ -285,6 +339,24 @@ VENDOR_TAXONOMY = {
                 "tab": "Boot",
                 "path": "Boot -> Fast Boot",
                 "target": "Disabled"
+            },
+            "cppc": {
+                "name": "CPPC",
+                "tab": "Advanced",
+                "path": "Advanced -> AMD CBS -> CPU Common Options -> CPPC",
+                "target": "Enabled"
+            },
+            "cppc_pref": {
+                "name": "CPPC Preferred Cores",
+                "tab": "Advanced",
+                "path": "Advanced -> AMD CBS -> CPU Common Options -> CPPC Preferred Cores",
+                "target": "Enabled"
+            },
+            "gdm": {
+                "name": "Gear Down Mode",
+                "tab": "OC Tweaker",
+                "path": "OC Tweaker -> DRAM Timing Configuration -> Gear Down Mode",
+                "target": "Enabled"
             }
         }
     }

@@ -9,6 +9,7 @@ Analyzes:
 
 import os
 import sys
+import re
 import json
 import subprocess
 from pathlib import Path
@@ -115,8 +116,19 @@ class PlatformDetector:
             # Check filename indicators
             if any(k in name_lower for k in ["asus", "tuf", "prime", "strix"]) or p.suffix.lower() == ".cap":
                 board["vendor"] = "ASUSTeK COMPUTER INC."
-                board["name"] = "ASUS B550 (TUF/PRIME/ROG)"
+                if "tuf" in name_lower and "plus" in name_lower:
+                    board["name"] = "ASUS TUF GAMING B550-PLUS"
+                elif "prime" in name_lower and "plus" in name_lower:
+                    board["name"] = "ASUS PRIME B550-PLUS"
+                elif "strix" in name_lower:
+                    board["name"] = "ASUS ROG STRIX B550-F GAMING"
+                else:
+                    board["name"] = "ASUS B550 (TUF/PRIME/ROG)"
                 board["vendor_key"] = "asus"
+                
+                ver_match = re.search(r'[-_]([0-9]{4})\.cap', p.name, re.I)
+                if ver_match:
+                    board["bios_version"] = ver_match.group(1)
                 return board
             elif any(k in name_lower for k in ["aorus", "gigabyte"]) or p.suffix.lower().startswith(".f"):
                 board["vendor"] = "Gigabyte Technology Co., Ltd."
