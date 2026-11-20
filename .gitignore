@@ -19,3 +19,9 @@ extracted/
 .vscode/
 .idea/
 .agents/
+
+# Binary profile files and raw NVRAM dumps
+*.PRO
+*.bin
+profiles/*.PRO
+findings/*.bin
