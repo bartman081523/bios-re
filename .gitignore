@@ -25,3 +25,7 @@ extracted/
 *.bin
 profiles/*.PRO
 findings/*.bin
+
+# Decompiled intermediate outputs and binary EFI modules
+*.efi
+decompiled/
