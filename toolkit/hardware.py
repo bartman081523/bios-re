@@ -113,51 +113,140 @@ class PlatformDetector:
             board["source"] = f"image: {p.name}"
             name_lower = p.name.lower()
             
-            # Check filename indicators
+            # --- A. Check Filename Patterns ---
+            # ASUS
             if any(k in name_lower for k in ["asus", "tuf", "prime", "strix"]) or p.suffix.lower() == ".cap":
                 board["vendor"] = "ASUSTeK COMPUTER INC."
+                board["vendor_key"] = "asus"
                 if "tuf" in name_lower and "plus" in name_lower:
                     board["name"] = "ASUS TUF GAMING B550-PLUS"
                 elif "prime" in name_lower and "plus" in name_lower:
                     board["name"] = "ASUS PRIME B550-PLUS"
-                elif "strix" in name_lower:
+                elif "strix" in name_lower or "b550-f" in name_lower:
                     board["name"] = "ASUS ROG STRIX B550-F GAMING"
                 else:
                     board["name"] = "ASUS B550 (TUF/PRIME/ROG)"
-                board["vendor_key"] = "asus"
                 
                 ver_match = re.search(r'[-_]([0-9]{4})\.cap', p.name, re.I)
                 if ver_match:
                     board["bios_version"] = ver_match.group(1)
                 return board
-            elif any(k in name_lower for k in ["aorus", "gigabyte"]) or p.suffix.lower().startswith(".f"):
-                board["vendor"] = "Gigabyte Technology Co., Ltd."
-                board["name"] = "Gigabyte B550 (AORUS / Gaming)"
-                board["vendor_key"] = "gigabyte"
-                return board
-            elif any(k in name_lower for k in ["msi", "tomahawk", "e7c"]):
+
+            # MSI
+            elif any(k in name_lower for k in ["msi", "tomahawk", "gaming plus", "e7c", "7c91", "7c56"]):
                 board["vendor"] = "Micro-Star International Co., Ltd."
-                board["name"] = "MSI B550 (MAG/MPG/PRO)"
                 board["vendor_key"] = "msi"
+                if "7c91" in name_lower or "tomahawk" in name_lower:
+                    board["name"] = "MSI MAG B550 TOMAHAWK"
+                elif "7c56" in name_lower or "gaming plus" in name_lower:
+                    board["name"] = "MSI MPG B550 GAMING PLUS"
+                elif "b550-a pro" in name_lower:
+                    board["name"] = "MSI B550-A PRO"
+                else:
+                    board["name"] = "MSI B550 (MAG/MPG/PRO)"
+                
+                ver_match = re.search(r'\.([0-9A-Za-z]{3})$', p.name)
+                if ver_match:
+                    board["bios_version"] = ver_match.group(1)
                 return board
 
-            # Scan image binary contents
+            # ASRock
+            elif any(k in name_lower for k in ["asrock", "b550sl", "b550p4", "b550pg", "steel legend", "pro4"]):
+                board["vendor"] = "ASRock Incorporation"
+                board["vendor_key"] = "asrock"
+                if "b550sl" in name_lower or "steel" in name_lower:
+                    board["name"] = "ASRock B550 Steel Legend"
+                elif "b550p4" in name_lower or "pro4" in name_lower:
+                    board["name"] = "ASRock B550 Pro4"
+                elif "phantom" in name_lower or "b550pg" in name_lower:
+                    board["name"] = "ASRock B550 Phantom Gaming 4"
+                else:
+                    board["name"] = "ASRock B550 Platform"
+                
+                ver_match = re.search(r'([0-9]+\.[0-9]+)', p.name)
+                if ver_match:
+                    board["bios_version"] = ver_match.group(1)
+                return board
+
+            # Gigabyte
+            elif any(k in name_lower for k in ["aorus", "gigabyte", "b550aorus"]) or p.suffix.lower().startswith(".f"):
+                board["vendor"] = "Gigabyte Technology Co., Ltd."
+                board["vendor_key"] = "gigabyte"
+                if "elite v2" in name_lower or "aoruselitev2" in name_lower:
+                    board["name"] = "Gigabyte B550 AORUS ELITE V2"
+                elif "pro" in name_lower or "aoruspro" in name_lower:
+                    board["name"] = "Gigabyte B550 AORUS PRO"
+                elif "gaming x" in name_lower:
+                    board["name"] = "Gigabyte B550 GAMING X"
+                else:
+                    board["name"] = "Gigabyte B550 (AORUS / Gaming)"
+                
+                ver_match = re.search(r'\.(F[0-9a-zA-Z]+)$', p.name)
+                if ver_match:
+                    board["bios_version"] = ver_match.group(1)
+                return board
+
+            # --- B. Scan Image Binary Contents (fallback) ---
             try:
                 data = p.read_bytes()
-                if b"ASUSTeK" in data or b"ASUS" in data:
+                # ASRock markers
+                if b"Steel Legend" in data:
+                    board["vendor"] = "ASRock Incorporation"
+                    board["name"] = "ASRock B550 Steel Legend"
+                    board["vendor_key"] = "asrock"
+                    return board
+                elif b"Pro4" in data:
+                    board["vendor"] = "ASRock Incorporation"
+                    board["name"] = "ASRock B550 Pro4"
+                    board["vendor_key"] = "asrock"
+                    return board
+                # MSI markers
+                elif b"E7C91AMS" in data:
+                    board["vendor"] = "Micro-Star International Co., Ltd."
+                    board["name"] = "MSI MAG B550 TOMAHAWK"
+                    board["vendor_key"] = "msi"
+                    return board
+                elif b"E7C56AMS" in data:
+                    board["vendor"] = "Micro-Star International Co., Ltd."
+                    board["name"] = "MSI MPG B550 GAMING PLUS"
+                    board["vendor_key"] = "msi"
+                    return board
+                elif b"Micro-Star" in data:
+                    board["vendor"] = "Micro-Star International Co., Ltd."
+                    board["name"] = "MSI AM4 Platform"
+                    board["vendor_key"] = "msi"
+                    return board
+                # ASUS markers
+                elif b"ROG-STRIX" in data or b"ROG STRIX" in data:
+                    board["vendor"] = "ASUSTeK COMPUTER INC."
+                    board["name"] = "ASUS ROG STRIX B550-F GAMING"
+                    board["vendor_key"] = "asus"
+                    return board
+                elif b"TUF GAMING" in data:
+                    board["vendor"] = "ASUSTeK COMPUTER INC."
+                    board["name"] = "ASUS TUF GAMING B550-PLUS"
+                    board["vendor_key"] = "asus"
+                    return board
+                elif b"PRIME B550" in data:
+                    board["vendor"] = "ASUSTeK COMPUTER INC."
+                    board["name"] = "ASUS PRIME B550-PLUS"
+                    board["vendor_key"] = "asus"
+                    return board
+                elif b"ASUSTeK" in data or b"ASUS" in data:
                     board["vendor"] = "ASUSTeK COMPUTER INC."
                     board["name"] = "ASUS AM4 Platform"
                     board["vendor_key"] = "asus"
+                    return board
+                # Gigabyte markers
+                elif b"B550 AORUS ELITE V2" in data:
+                    board["vendor"] = "Gigabyte Technology Co., Ltd."
+                    board["name"] = "Gigabyte B550 AORUS ELITE V2"
+                    board["vendor_key"] = "gigabyte"
                     return board
                 elif b"GIGABYTE" in data or b"Gigabyte" in data:
                     board["vendor"] = "Gigabyte Technology Co., Ltd."
                     board["name"] = "Gigabyte AM4 Platform"
                     board["vendor_key"] = "gigabyte"
-                    return board
-                elif b"Micro-Star" in data or b"MSI" in data:
-                    board["vendor"] = "Micro-Star International Co., Ltd."
-                    board["name"] = "MSI AM4 Platform"
-                    board["vendor_key"] = "msi"
                     return board
             except Exception:
                 pass

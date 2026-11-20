@@ -4,6 +4,21 @@ Universal, autonomous BIOS advisory suite and binary profile generator for AMD A
 
 ---
 
+## Supported Motherboard Architectures
+
+The suite natively parses and generates verified step-by-step walkthroughs for all 4 major AM4 motherboard manufacturers from live DMI or directly from vendor firmware images (`--image`):
+
+| Vendor | GUI Architecture | Mode Toggle | Tested & Verified Models |
+| :--- | :--- | :--- | :--- |
+| **Gigabyte** | AORUS / Gaming UI | `F2` | B550 AORUS ELITE V2 (Rev 1.0/1.1/1.2/1.4/1.5), B550 AORUS PRO, B550 GAMING X |
+| **ASUS** | ROG / TUF / Prime UEFI | `F7` | TUF GAMING B550-PLUS, ROG STRIX B550-F GAMING, PRIME B550-PLUS |
+| **MSI** | Click BIOS 5 | `F7` | MAG B550 TOMAHAWK (MS-7C91), MPG B550 GAMING PLUS (MS-7C56), B550-A PRO |
+| **ASRock** | Polychrome / Legend UEFI| `F6` | B550 Steel Legend, B550 Pro4, B550 Phantom Gaming 4 |
+
+For detailed cross-vendor comparisons, consult the [Multi-Vendor B550 Matrix](findings/multi_vendor_b550_matrix.md).
+
+---
+
 ## Key Features
 
 1. **Autonomous Motherboard & Platform Detection**
