@@ -1,0 +1,9078 @@
+{
+  "307": {
+    "varoff": 307,
+    "hex_off": "0x133",
+    "op": "NUMERIC",
+    "qid": 19,
+    "prompt": "CPU Clock Control",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000020000",
+        "id": 0
+      }
+    ]
+  },
+  "311": {
+    "varoff": 311,
+    "hex_off": "0x137",
+    "op": "ONE_OF",
+    "qid": 20,
+    "prompt": "Spread Spectrum Control",
+    "help": "Spread Spectrum Control",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "312": {
+    "varoff": 312,
+    "hex_off": "0x138",
+    "op": "NUMERIC",
+    "qid": 21,
+    "prompt": "Host Clock Value",
+    "help": "Manually select CPU base clock ratio (gear ratio).\r\nNote: Base clock gear ratio will also affect memory frequency.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000020000",
+        "id": 0
+      }
+    ]
+  },
+  "316": {
+    "varoff": 316,
+    "hex_off": "0x13c",
+    "op": "NUMERIC",
+    "qid": 22,
+    "prompt": "GFX Clock Frequency",
+    "help": "Specifies the Clock Frequency value(in MHz) for GFX Core to support overclocking.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000020000",
+        "id": 0
+      }
+    ]
+  },
+  "320": {
+    "varoff": 320,
+    "hex_off": "0x140",
+    "op": "NUMERIC",
+    "qid": 23,
+    "prompt": "GFX Core Voltage",
+    "help": "Specifies the Voltage ID (VID) value for GFX Core to support overclocking.\r\nNOTE:  This is a VID value and not a voltage level.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000020000",
+        "id": 0
+      }
+    ]
+  },
+  "292": {
+    "varoff": 292,
+    "hex_off": "0x124",
+    "op": "ONE_OF",
+    "qid": 24,
+    "prompt": "CPU Ratio Mode",
+    "help": "CPU Ratio Mode",
+    "options": [
+      {
+        "text": "All cores",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Per CCX",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "293": {
+    "varoff": 293,
+    "hex_off": "0x125",
+    "op": "NUMERIC",
+    "qid": 25,
+    "prompt": "CPU Clock Ratio",
+    "help": "Adjusting CPU Clock ratio will affect the CPU clock frequency, temperature and voltage requirements.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 0
+      }
+    ]
+  },
+  "295": {
+    "varoff": 295,
+    "hex_off": "0x127",
+    "op": "NUMERIC",
+    "qid": 26,
+    "prompt": "CCD0 CCX0 Ratio",
+    "help": "Manually set CCD0 CCX0 Core ratio.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 0
+      }
+    ]
+  },
+  "297": {
+    "varoff": 297,
+    "hex_off": "0x129",
+    "op": "NUMERIC",
+    "qid": 27,
+    "prompt": "CCD0 CCX1 Ratio",
+    "help": "Manually set CCD0 CCX1 Core ratio.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 0
+      }
+    ]
+  },
+  "299": {
+    "varoff": 299,
+    "hex_off": "0x12b",
+    "op": "NUMERIC",
+    "qid": 28,
+    "prompt": "CCD1 CCX0  Ratio",
+    "help": "Manually set CCD1 CCX0 Core ratio.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 0
+      }
+    ]
+  },
+  "301": {
+    "varoff": 301,
+    "hex_off": "0x12d",
+    "op": "NUMERIC",
+    "qid": 29,
+    "prompt": "CCD1 CCX1  Ratio",
+    "help": "Manually set CCD1 CCX1 Core ratio.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 0
+      }
+    ]
+  },
+  "303": {
+    "varoff": 303,
+    "hex_off": "0x12f",
+    "op": "NUMERIC",
+    "qid": 30,
+    "prompt": "CPU Frequency",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000020000",
+        "id": 0
+      }
+    ]
+  },
+  "343": {
+    "varoff": 343,
+    "hex_off": "0x157",
+    "op": "ONE_OF",
+    "qid": 10067,
+    "prompt": "Extreme Memory Profile(X.M.P.)",
+    "help": "",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "Profile1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Profile2",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "345": {
+    "varoff": 345,
+    "hex_off": "0x159",
+    "op": "NUMERIC",
+    "qid": 32,
+    "prompt": "System Memory Multiplier",
+    "help": "Adjust system memory multiplier to adjust overall memory frequency.\r\n\u2018Auto\u2019 sets the memory multiplier according to memory SPD (Serial Presence Detection), a multiplier setting configured by the memory vendor which follows standard JEDEC specifications.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "347": {
+    "varoff": 347,
+    "hex_off": "0x15b",
+    "op": "NUMERIC",
+    "qid": 33,
+    "prompt": "Memory Frequency(MHz)",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "326": {
+    "varoff": 326,
+    "hex_off": "0x146",
+    "op": "ONE_OF",
+    "qid": 36,
+    "prompt": "Core Performance Boost",
+    "help": "Enable/Disable Turbo mode.\r\nTurbo mode opportunistically and automatically allows the processor to run faster than it's marked frequency if the processor is operating below power, temperature and current specifications.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "327": {
+    "varoff": 327,
+    "hex_off": "0x147",
+    "op": "NUMERIC",
+    "qid": 37,
+    "prompt": "Core Performance Boost Ratio",
+    "help": "Manually set Core turbo ratio limit.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "329": {
+    "varoff": 329,
+    "hex_off": "0x149",
+    "op": "ONE_OF",
+    "qid": 38,
+    "prompt": "Turbo Performance Boost Ratio",
+    "help": "Turbo Performance Boost Ratio.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "330": {
+    "varoff": 330,
+    "hex_off": "0x14a",
+    "op": "ONE_OF",
+    "qid": 39,
+    "prompt": "AMD Cool&Quiet function",
+    "help": "Enable/Disable AMD Cool&Quiet function.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "331": {
+    "varoff": 331,
+    "hex_off": "0x14b",
+    "op": "ONE_OF",
+    "qid": 40,
+    "prompt": "NX Mode",
+    "help": "Enable/disable No-execute page protection Function",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "332": {
+    "varoff": 332,
+    "hex_off": "0x14c",
+    "op": "ONE_OF",
+    "qid": 41,
+    "prompt": "SVM Mode",
+    "help": "Enable/Disable CPU Virtualization.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "340": {
+    "varoff": 340,
+    "hex_off": "0x154",
+    "op": "ONE_OF",
+    "qid": 42,
+    "prompt": "PPC Adjustment",
+    "help": "Provide to adjust _PPC object.",
+    "options": [
+      {
+        "text": "PState 0",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "333": {
+    "varoff": 333,
+    "hex_off": "0x14d",
+    "op": "ONE_OF",
+    "qid": 50,
+    "prompt": "C6 Mode",
+    "help": "Enable/Disable C6.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "334": {
+    "varoff": 334,
+    "hex_off": "0x14e",
+    "op": "ONE_OF",
+    "qid": 51,
+    "prompt": "Global C-state Control",
+    "help": "Controls IO based C-state generation and DF C-states.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 768
+      }
+    ]
+  },
+  "335": {
+    "varoff": 335,
+    "hex_off": "0x14f",
+    "op": "ONE_OF",
+    "qid": 52,
+    "prompt": "Power Supply Idle Control",
+    "help": "Power Supply Idle Control.",
+    "options": [
+      {
+        "text": "Typical Current Idle",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Low Current Idle",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 3840
+      }
+    ]
+  },
+  "336": {
+    "varoff": 336,
+    "hex_off": "0x150",
+    "op": "ONE_OF",
+    "qid": 53,
+    "prompt": "Opcache Control",
+    "help": "Enable/Disable the Opcache.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 65280
+      }
+    ]
+  },
+  "337": {
+    "varoff": 337,
+    "hex_off": "0x151",
+    "op": "ONE_OF",
+    "qid": 54,
+    "prompt": "CCD Control",
+    "help": "Sets the number of CCDs to be used. Once this option has been used to remove any CCDs, a POWER CYCLE is required in order for future selections to take effect.",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "1 CCD",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "341": {
+    "varoff": 341,
+    "hex_off": "0x155",
+    "op": "ONE_OF",
+    "qid": 55,
+    "prompt": "CPPC",
+    "help": "FEATURE_CPPC_MASK",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 3840
+      }
+    ]
+  },
+  "342": {
+    "varoff": 342,
+    "hex_off": "0x156",
+    "op": "ONE_OF",
+    "qid": 56,
+    "prompt": "CPPC Preferred Cores",
+    "help": "FEATURE_CPPC_MASK",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 3840
+      }
+    ]
+  },
+  "338": {
+    "varoff": 338,
+    "hex_off": "0x152",
+    "op": "ONE_OF",
+    "qid": 57,
+    "prompt": "Downcore Control",
+    "help": "Sets the number of cores to be used. Once this option has been used to remove any cores, a POWER CYCLE is required in order for future selections to take effect.\r\nWARNING - S3 is NOT SUPPORTED on systems where cores/threads have been removed/disabled.",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "ONE (1 + 0)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "TWO (1 + 1)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "TWO (2 + 0)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "THREE (3 + 0)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "FOUR (2 + 2)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "FOUR (4 + 0)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "SIX (3 + 3)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "ONE",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "TWO",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "THREE",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "ONE (1 + 0)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "TWO (2 + 0)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "THREE (3 + 0)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "FOUR (4 + 0)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "SIX (6 + 0)",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "339": {
+    "varoff": 339,
+    "hex_off": "0x153",
+    "op": "ONE_OF",
+    "qid": 58,
+    "prompt": "SMT Mode",
+    "help": "Enable/Disable SMT.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "344": {
+    "varoff": 344,
+    "hex_off": "0x158",
+    "op": "ONE_OF",
+    "qid": 59,
+    "prompt": "XMP High Frequency Support",
+    "help": "",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "Level 3",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Level 2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Level 1",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "350": {
+    "varoff": 350,
+    "hex_off": "0x15e",
+    "op": "NUMERIC",
+    "qid": 62,
+    "prompt": "Profile DDR Voltage",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000002ffff",
+        "id": 65535
+      }
+    ]
+  },
+  "354": {
+    "varoff": 354,
+    "hex_off": "0x162",
+    "op": "ONE_OF",
+    "qid": 63,
+    "prompt": "Channel Interleaving",
+    "help": "Enable/Disable Channel Interleaving",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "355": {
+    "varoff": 355,
+    "hex_off": "0x163",
+    "op": "ONE_OF",
+    "qid": 64,
+    "prompt": "Rank Interleaving",
+    "help": "Enables or disables memory rank interleaving. Enabled allows the system to simultaneously access different ranks of the memory to increase memory performance and stability. Auto lets the BIOS automatically configure this setting.",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "372": {
+    "varoff": 372,
+    "hex_off": "0x174",
+    "op": "NUMERIC",
+    "qid": 67,
+    "prompt": "CAS Latency",
+    "help": "CAS (Column Address Strobe)latency is the delay time between the memory controller and the memory module. In general, lower latency timings offer improved performance.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "374": {
+    "varoff": 374,
+    "hex_off": "0x176",
+    "op": "NUMERIC",
+    "qid": 68,
+    "prompt": "tRCD",
+    "help": "Adjust DRAM RAS# to CAS# Delay.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "376": {
+    "varoff": 376,
+    "hex_off": "0x178",
+    "op": "NUMERIC",
+    "qid": 69,
+    "prompt": "tRCDRD",
+    "help": "Adjust DRAM RAS# to CAS# RD Delay.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "378": {
+    "varoff": 378,
+    "hex_off": "0x17a",
+    "op": "NUMERIC",
+    "qid": 70,
+    "prompt": "tRCDWR",
+    "help": "Adjust DRAM RAS# to CAS# WR Delay.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "380": {
+    "varoff": 380,
+    "hex_off": "0x17c",
+    "op": "NUMERIC",
+    "qid": 71,
+    "prompt": "tRP",
+    "help": "Adjust DRAM RAS# PRE Time.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "382": {
+    "varoff": 382,
+    "hex_off": "0x17e",
+    "op": "NUMERIC",
+    "qid": 72,
+    "prompt": "tRAS",
+    "help": "Adjust DRAM RAS# ACT Time.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "384": {
+    "varoff": 384,
+    "hex_off": "0x180",
+    "op": "NUMERIC",
+    "qid": 73,
+    "prompt": "tRC",
+    "help": "Adjust tRC Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "386": {
+    "varoff": 386,
+    "hex_off": "0x182",
+    "op": "NUMERIC",
+    "qid": 74,
+    "prompt": "tWR",
+    "help": "Adjust tWR Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "388": {
+    "varoff": 388,
+    "hex_off": "0x184",
+    "op": "NUMERIC",
+    "qid": 75,
+    "prompt": "tCWL",
+    "help": "Adjust tCWL Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "390": {
+    "varoff": 390,
+    "hex_off": "0x186",
+    "op": "NUMERIC",
+    "qid": 76,
+    "prompt": "tRRD_S",
+    "help": "Adjust tRRD_S Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "392": {
+    "varoff": 392,
+    "hex_off": "0x188",
+    "op": "NUMERIC",
+    "qid": 77,
+    "prompt": "tRRD_L",
+    "help": "Adjust tRRD_L Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "394": {
+    "varoff": 394,
+    "hex_off": "0x18a",
+    "op": "NUMERIC",
+    "qid": 78,
+    "prompt": "tWTR_S",
+    "help": "Adjust tWTR_S Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "396": {
+    "varoff": 396,
+    "hex_off": "0x18c",
+    "op": "NUMERIC",
+    "qid": 79,
+    "prompt": "tWTR_L",
+    "help": "Adjust tWTR_L Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "398": {
+    "varoff": 398,
+    "hex_off": "0x18e",
+    "op": "NUMERIC",
+    "qid": 80,
+    "prompt": "tRFC",
+    "help": "Adjust tRFC Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "400": {
+    "varoff": 400,
+    "hex_off": "0x190",
+    "op": "NUMERIC",
+    "qid": 81,
+    "prompt": "tRFC2",
+    "help": "Adjust tRFC2 Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "402": {
+    "varoff": 402,
+    "hex_off": "0x192",
+    "op": "NUMERIC",
+    "qid": 82,
+    "prompt": "tRFC4",
+    "help": "Adjust tRFC4 Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "404": {
+    "varoff": 404,
+    "hex_off": "0x194",
+    "op": "NUMERIC",
+    "qid": 83,
+    "prompt": "tRTP",
+    "help": "Adjust tRTP Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "406": {
+    "varoff": 406,
+    "hex_off": "0x196",
+    "op": "NUMERIC",
+    "qid": 84,
+    "prompt": "tFAW",
+    "help": "Adjust tFAW Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "408": {
+    "varoff": 408,
+    "hex_off": "0x198",
+    "op": "NUMERIC",
+    "qid": 85,
+    "prompt": "tRCPAGE",
+    "help": "Adjust tRCPAGE Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "410": {
+    "varoff": 410,
+    "hex_off": "0x19a",
+    "op": "NUMERIC",
+    "qid": 86,
+    "prompt": "tRDWR",
+    "help": "Adjust tRDWR Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "412": {
+    "varoff": 412,
+    "hex_off": "0x19c",
+    "op": "NUMERIC",
+    "qid": 87,
+    "prompt": "tRDRDSC",
+    "help": "Adjust tRDRDSC Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "414": {
+    "varoff": 414,
+    "hex_off": "0x19e",
+    "op": "NUMERIC",
+    "qid": 88,
+    "prompt": "tRDRDSD",
+    "help": "Adjust tRDRDSD Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "416": {
+    "varoff": 416,
+    "hex_off": "0x1a0",
+    "op": "NUMERIC",
+    "qid": 89,
+    "prompt": "tRDRDDD",
+    "help": "Adjust tRDRDDD Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "418": {
+    "varoff": 418,
+    "hex_off": "0x1a2",
+    "op": "NUMERIC",
+    "qid": 90,
+    "prompt": "tRDRD_SCL",
+    "help": "Adjust tRDRD_SCL Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "420": {
+    "varoff": 420,
+    "hex_off": "0x1a4",
+    "op": "NUMERIC",
+    "qid": 91,
+    "prompt": "tWRRD",
+    "help": "Adjust tWRRD Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "422": {
+    "varoff": 422,
+    "hex_off": "0x1a6",
+    "op": "NUMERIC",
+    "qid": 92,
+    "prompt": "tWRWRSC",
+    "help": "Adjust tWRWRSC Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "424": {
+    "varoff": 424,
+    "hex_off": "0x1a8",
+    "op": "NUMERIC",
+    "qid": 93,
+    "prompt": "tWRWRSD",
+    "help": "Adjust tWRWRSD Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "426": {
+    "varoff": 426,
+    "hex_off": "0x1aa",
+    "op": "NUMERIC",
+    "qid": 94,
+    "prompt": "tWRWRDD",
+    "help": "Adjust tWRWRDD Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "428": {
+    "varoff": 428,
+    "hex_off": "0x1ac",
+    "op": "NUMERIC",
+    "qid": 95,
+    "prompt": "tWRWR_SCL",
+    "help": "Adjust tWRWR_SCL Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "430": {
+    "varoff": 430,
+    "hex_off": "0x1ae",
+    "op": "NUMERIC",
+    "qid": 96,
+    "prompt": "tCKE",
+    "help": "Adjust tCKE Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "356": {
+    "varoff": 356,
+    "hex_off": "0x164",
+    "op": "ONE_OF",
+    "qid": 97,
+    "prompt": "ProcODT",
+    "help": "Specifies the Processor ODT",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "High Impedance",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "480 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "240 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "160 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "120 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "96 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "80 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "68.6 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "60 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "53.3 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "48 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "43.6 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "40 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "36.9 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "34.3 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "32 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "30 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "28.2 ohm",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "357": {
+    "varoff": 357,
+    "hex_off": "0x165",
+    "op": "ONE_OF",
+    "qid": 98,
+    "prompt": "Command Rate(tCMD)",
+    "help": "Adjust Command Rate(tCMD) Settings.",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "1T",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "2T",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "358": {
+    "varoff": 358,
+    "hex_off": "0x166",
+    "op": "ONE_OF",
+    "qid": 99,
+    "prompt": "Gear Down Mode",
+    "help": "No help string",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "359": {
+    "varoff": 359,
+    "hex_off": "0x167",
+    "op": "NUMERIC",
+    "qid": 100,
+    "prompt": "AddrCmdSetup",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "361": {
+    "varoff": 361,
+    "hex_off": "0x169",
+    "op": "NUMERIC",
+    "qid": 101,
+    "prompt": "CsOdtSetup",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "363": {
+    "varoff": 363,
+    "hex_off": "0x16b",
+    "op": "NUMERIC",
+    "qid": 102,
+    "prompt": "CkeSetup",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "365": {
+    "varoff": 365,
+    "hex_off": "0x16d",
+    "op": "ONE_OF",
+    "qid": 103,
+    "prompt": "ClkDrvStren",
+    "help": "",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "120 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "60 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "40 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "30 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "24 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "20 ohm",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "366": {
+    "varoff": 366,
+    "hex_off": "0x16e",
+    "op": "ONE_OF",
+    "qid": 104,
+    "prompt": "AddrCmdDrvStren",
+    "help": "",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "120 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "60 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "40 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "30 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "24 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "20 ohm",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "367": {
+    "varoff": 367,
+    "hex_off": "0x16f",
+    "op": "ONE_OF",
+    "qid": 105,
+    "prompt": "CsOdtDrvStren",
+    "help": "",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "120 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "60 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "40 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "30 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "24 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "20 ohm",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "368": {
+    "varoff": 368,
+    "hex_off": "0x170",
+    "op": "ONE_OF",
+    "qid": 106,
+    "prompt": "CkeDrvStren",
+    "help": "",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "120 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "60 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "40 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "30 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "24 ohm",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "20 ohm",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "369": {
+    "varoff": 369,
+    "hex_off": "0x171",
+    "op": "ONE_OF",
+    "qid": 107,
+    "prompt": "RttNom",
+    "help": "",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "Rtt_Nom Disable",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/3",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/4",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/5",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/6",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/7",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "370": {
+    "varoff": 370,
+    "hex_off": "0x172",
+    "op": "ONE_OF",
+    "qid": 108,
+    "prompt": "RttWr",
+    "help": "",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "Dynamic ODT Off",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/3",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Hi-Z",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "371": {
+    "varoff": 371,
+    "hex_off": "0x173",
+    "op": "ONE_OF",
+    "qid": 109,
+    "prompt": "RttPark",
+    "help": "",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "Rtt_PARK Disable",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/3",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/4",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/5",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/6",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RZQ/7",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "349": {
+    "varoff": 349,
+    "hex_off": "0x15d",
+    "op": "ONE_OF",
+    "qid": 10078,
+    "prompt": "Memory Timing Mode",
+    "help": "Auto = Automatically configures memory sub-timings. \r\nManual = Manually configure memory sub timings with settings applied to both channels simultaneously.\r\nAdvanced Manual = Manually configure both memory channels individually.",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Manual",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Advanced Manual",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "432": {
+    "varoff": 432,
+    "hex_off": "0x1b0",
+    "op": "NUMERIC",
+    "qid": 153,
+    "prompt": "CAS Latency",
+    "help": "CAS (Column Address Strobe)latency is the delay time between the memory controller and the memory module. In general, lower latency timings offer improved performance.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "434": {
+    "varoff": 434,
+    "hex_off": "0x1b2",
+    "op": "NUMERIC",
+    "qid": 154,
+    "prompt": "tRCD",
+    "help": "Adjust DRAM RAS# to CAS# Delay.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "436": {
+    "varoff": 436,
+    "hex_off": "0x1b4",
+    "op": "NUMERIC",
+    "qid": 155,
+    "prompt": "tRCDRD",
+    "help": "Adjust DRAM RAS# to CAS# RD Delay.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "438": {
+    "varoff": 438,
+    "hex_off": "0x1b6",
+    "op": "NUMERIC",
+    "qid": 156,
+    "prompt": "tRCDWR",
+    "help": "Adjust DRAM RAS# to CAS# WR Delay.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "440": {
+    "varoff": 440,
+    "hex_off": "0x1b8",
+    "op": "NUMERIC",
+    "qid": 157,
+    "prompt": "tRP",
+    "help": "Adjust DRAM RAS# PRE Time.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "442": {
+    "varoff": 442,
+    "hex_off": "0x1ba",
+    "op": "NUMERIC",
+    "qid": 158,
+    "prompt": "tRAS",
+    "help": "Adjust DRAM RAS# ACT Time.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "444": {
+    "varoff": 444,
+    "hex_off": "0x1bc",
+    "op": "NUMERIC",
+    "qid": 159,
+    "prompt": "tRC",
+    "help": "Adjust tRC Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "446": {
+    "varoff": 446,
+    "hex_off": "0x1be",
+    "op": "NUMERIC",
+    "qid": 160,
+    "prompt": "tWR",
+    "help": "Adjust tWR Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "448": {
+    "varoff": 448,
+    "hex_off": "0x1c0",
+    "op": "NUMERIC",
+    "qid": 161,
+    "prompt": "tCWL",
+    "help": "Adjust tCWL Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "450": {
+    "varoff": 450,
+    "hex_off": "0x1c2",
+    "op": "NUMERIC",
+    "qid": 162,
+    "prompt": "tRRD_S",
+    "help": "Adjust tRRD_S Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "452": {
+    "varoff": 452,
+    "hex_off": "0x1c4",
+    "op": "NUMERIC",
+    "qid": 163,
+    "prompt": "tRRD_L",
+    "help": "Adjust tRRD_L Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "454": {
+    "varoff": 454,
+    "hex_off": "0x1c6",
+    "op": "NUMERIC",
+    "qid": 164,
+    "prompt": "tWTR_S",
+    "help": "Adjust tWTR_S Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "456": {
+    "varoff": 456,
+    "hex_off": "0x1c8",
+    "op": "NUMERIC",
+    "qid": 165,
+    "prompt": "tWTR_L",
+    "help": "Adjust tWTR_L Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "458": {
+    "varoff": 458,
+    "hex_off": "0x1ca",
+    "op": "NUMERIC",
+    "qid": 166,
+    "prompt": "tRFC",
+    "help": "Adjust tRFC Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "460": {
+    "varoff": 460,
+    "hex_off": "0x1cc",
+    "op": "NUMERIC",
+    "qid": 167,
+    "prompt": "tRFC2",
+    "help": "Adjust tRFC2 Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "462": {
+    "varoff": 462,
+    "hex_off": "0x1ce",
+    "op": "NUMERIC",
+    "qid": 168,
+    "prompt": "tRFC4",
+    "help": "Adjust tRFC4 Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "464": {
+    "varoff": 464,
+    "hex_off": "0x1d0",
+    "op": "NUMERIC",
+    "qid": 169,
+    "prompt": "tRTP",
+    "help": "Adjust tRTP Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "466": {
+    "varoff": 466,
+    "hex_off": "0x1d2",
+    "op": "NUMERIC",
+    "qid": 170,
+    "prompt": "tFAW",
+    "help": "Adjust tFAW Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "468": {
+    "varoff": 468,
+    "hex_off": "0x1d4",
+    "op": "NUMERIC",
+    "qid": 171,
+    "prompt": "tRCPAGE",
+    "help": "Adjust tRCPAGE Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "470": {
+    "varoff": 470,
+    "hex_off": "0x1d6",
+    "op": "NUMERIC",
+    "qid": 172,
+    "prompt": "tRDWR",
+    "help": "Adjust tRDWR Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "472": {
+    "varoff": 472,
+    "hex_off": "0x1d8",
+    "op": "NUMERIC",
+    "qid": 173,
+    "prompt": "tRDRDSC",
+    "help": "Adjust tRDRDSC Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "474": {
+    "varoff": 474,
+    "hex_off": "0x1da",
+    "op": "NUMERIC",
+    "qid": 174,
+    "prompt": "tRDRDSD",
+    "help": "Adjust tRDRDSD Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "476": {
+    "varoff": 476,
+    "hex_off": "0x1dc",
+    "op": "NUMERIC",
+    "qid": 175,
+    "prompt": "tRDRDDD",
+    "help": "Adjust tRDRDDD Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "478": {
+    "varoff": 478,
+    "hex_off": "0x1de",
+    "op": "NUMERIC",
+    "qid": 176,
+    "prompt": "tRDRD_SCL",
+    "help": "Adjust tRDRD_SCL Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "480": {
+    "varoff": 480,
+    "hex_off": "0x1e0",
+    "op": "NUMERIC",
+    "qid": 177,
+    "prompt": "tWRRD",
+    "help": "Adjust tWRRD Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "482": {
+    "varoff": 482,
+    "hex_off": "0x1e2",
+    "op": "NUMERIC",
+    "qid": 178,
+    "prompt": "tWRWRSC",
+    "help": "Adjust tWRWRSC Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "484": {
+    "varoff": 484,
+    "hex_off": "0x1e4",
+    "op": "NUMERIC",
+    "qid": 179,
+    "prompt": "tWRWRSD",
+    "help": "Adjust tWRWRSD Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "486": {
+    "varoff": 486,
+    "hex_off": "0x1e6",
+    "op": "NUMERIC",
+    "qid": 180,
+    "prompt": "tWRWRDD",
+    "help": "Adjust tWRWRDD Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "488": {
+    "varoff": 488,
+    "hex_off": "0x1e8",
+    "op": "NUMERIC",
+    "qid": 181,
+    "prompt": "tWRWR_SCL",
+    "help": "Adjust tWRWR_SCL Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "490": {
+    "varoff": 490,
+    "hex_off": "0x1ea",
+    "op": "NUMERIC",
+    "qid": 182,
+    "prompt": "tCKE",
+    "help": "Adjust tCKE Settings.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "494": {
+    "varoff": 494,
+    "hex_off": "0x1ee",
+    "op": "NUMERIC",
+    "qid": 183,
+    "prompt": "CPU Vcore",
+    "help": "Adjust the CPU Vcore voltage. \r\nAuto = BIOS automatically configures this setting. \r\nVcore voltages can be entered manually. \r\nNote: Extreme overclocked configurations may need higher Vcore voltage, which may incur higher temperatures.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 0
+      }
+    ]
+  },
+  "496": {
+    "varoff": 496,
+    "hex_off": "0x1f0",
+    "op": "NUMERIC",
+    "qid": 10086,
+    "prompt": "Dynamic Vcore(DVID)",
+    "help": "Increase or decrease the upper or lower voltage limit for the CPU Vcore. \r\nNote. This option is only available when CPU Vcore (above) is set to \u2018Normal\u2019.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "498": {
+    "varoff": 498,
+    "hex_off": "0x1f2",
+    "op": "NUMERIC",
+    "qid": 184,
+    "prompt": "VCORE SOC",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "500": {
+    "varoff": 500,
+    "hex_off": "0x1f4",
+    "op": "NUMERIC",
+    "qid": 185,
+    "prompt": "Dynamic VCORE SOC(DVID)",
+    "help": "Increase or decrease the upper or lower voltage limit for the NB Vcore. \r\nNote. This option is only available when CPU Vcore (above) is set to \u2018Normal\u2019.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "508": {
+    "varoff": 508,
+    "hex_off": "0x1fc",
+    "op": "NUMERIC",
+    "qid": 186,
+    "prompt": "CPU VDD18",
+    "help": "Adjust the voltage of CPU VDD18.\r\nThis can be useful in certain overclocking configurations.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "506": {
+    "varoff": 506,
+    "hex_off": "0x1fa",
+    "op": "NUMERIC",
+    "qid": 187,
+    "prompt": "CPU VDDP",
+    "help": "CPU VDDP",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "510": {
+    "varoff": 510,
+    "hex_off": "0x1fe",
+    "op": "NUMERIC",
+    "qid": 188,
+    "prompt": "A_VDD18S5",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "512": {
+    "varoff": 512,
+    "hex_off": "0x200",
+    "op": "NUMERIC",
+    "qid": 189,
+    "prompt": "DRAM Voltage      (CH A/B)",
+    "help": "Adjust the voltage for the DDR System memory.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "514": {
+    "varoff": 514,
+    "hex_off": "0x202",
+    "op": "NUMERIC",
+    "qid": 190,
+    "prompt": "DDRVPP Voltage    (CH A/B)",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "516": {
+    "varoff": 516,
+    "hex_off": "0x204",
+    "op": "NUMERIC",
+    "qid": 191,
+    "prompt": "DRAM Termination  (CH A/B)",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "518": {
+    "varoff": 518,
+    "hex_off": "0x206",
+    "op": "NUMERIC",
+    "qid": 192,
+    "prompt": "CPU Vcore Loadline Calibration",
+    "help": "Select CPU Vcore load line calibration. This is useful in certain overclocking scenarios.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "520": {
+    "varoff": 520,
+    "hex_off": "0x208",
+    "op": "NUMERIC",
+    "qid": 193,
+    "prompt": "Vcore SOC Loadline Calibration",
+    "help": "",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 65535
+      }
+    ]
+  },
+  "524": {
+    "varoff": 524,
+    "hex_off": "0x20c",
+    "op": "CHECK_BOX",
+    "qid": 194,
+    "prompt": "Reset Case Open Status",
+    "help": "Select enable to clear the record of previous chassis intrusion status notifications. The \u2018Case Open\u2019 field will show 'No' at next boot.",
+    "options": [],
+    "defaults": []
+  },
+  "528": {
+    "varoff": 528,
+    "hex_off": "0x210",
+    "op": "ONE_OF",
+    "qid": 222,
+    "prompt": "PCIEX16 Slot Configuration",
+    "help": "Configure PCIe Slots Configuration according to PCIe generation.\r\nAuto = System will detect the appropriate PCIe Gen according to installed graphics card\r\nNote\uff1aPCIe Gen.3 will offer optimal bandwidth when paired with a compatible Gen.3  graphic card. However Gen.2 may be preferable in certain OC configurations.",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen3",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen4",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "529": {
+    "varoff": 529,
+    "hex_off": "0x211",
+    "op": "ONE_OF",
+    "qid": 223,
+    "prompt": "PCIe Slot Configuration",
+    "help": "Configure PCIe Slots Configuration according to PCIe generation.\r\nAuto = System will detect the appropriate PCIe Gen according to installed graphics card\r\nNote\uff1aPCIe Gen.3 will offer optimal bandwidth when paired with a compatible Gen.3  graphic card. However Gen.2 may be preferable in certain OC configurations.",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "Gen1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen3",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen4",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "530": {
+    "varoff": 530,
+    "hex_off": "0x212",
+    "op": "ONE_OF",
+    "qid": 224,
+    "prompt": "PCIe ASPM Mode",
+    "help": "Set the ASPM Level",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 16,
+        "type": 0
+      },
+      {
+        "text": "L0s Entry",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "L1 Entry",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "L0s And L1 Entry",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "527": {
+    "varoff": 527,
+    "hex_off": "0x20f",
+    "op": "ONE_OF",
+    "qid": 225,
+    "prompt": "3DMark01 Enhancement",
+    "help": "Enable legacy benchmark enhancement for enhanced performance of older benchmarks including 3DMark 01.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "0": {
+    "varoff": 0,
+    "hex_off": "0x000",
+    "op": "ONE_OF",
+    "qid": 230,
+    "prompt": "Bootup NumLock State",
+    "help": "Select the keyboard NumLock state",
+    "options": [
+      {
+        "text": "On",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Off",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      },
+      {
+        "val": "0100",
+        "id": 256
+      }
+    ]
+  },
+  "1": {
+    "varoff": 1,
+    "hex_off": "0x001",
+    "op": "ONE_OF",
+    "qid": 231,
+    "prompt": "Security Option",
+    "help": "Specify when to implement password security control.\r\nSetup = Password is required upon entering BIOS.\r\nSystem = Password is required upon  System boot and upon entering BIOS.",
+    "options": [
+      {
+        "text": "Setup",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "System",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "2": {
+    "varoff": 2,
+    "hex_off": "0x002",
+    "op": "ONE_OF",
+    "qid": 233,
+    "prompt": "Fast Boot",
+    "help": "Enables or disables boot with initialization of a minimal set of devices required to launch active boot option. Has no effect for BBS boot options.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Ultra Fast",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "3": {
+    "varoff": 3,
+    "hex_off": "0x003",
+    "op": "ONE_OF",
+    "qid": 234,
+    "prompt": "SATA Support",
+    "help": "If Last Boot SATA Devices Only, Only last boot SATA device will be available in Post. If All SATA Devices, all SATA devices will be available in OS and Post.",
+    "options": [
+      {
+        "text": "Last Boot SATA Devices Only",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "All SATA Devices",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "10": {
+    "varoff": 10,
+    "hex_off": "0x00a",
+    "op": "ONE_OF",
+    "qid": 235,
+    "prompt": "NVMe Support",
+    "help": "If Disabled, NVMe device will be skipped.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "11": {
+    "varoff": 11,
+    "hex_off": "0x00b",
+    "op": "ONE_OF",
+    "qid": 236,
+    "prompt": "UFS Support",
+    "help": "If Disabled, UFS device will be skipped.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "4": {
+    "varoff": 4,
+    "hex_off": "0x004",
+    "op": "ONE_OF",
+    "qid": 237,
+    "prompt": "VGA Support",
+    "help": "If Auto, only install Legacy OpRom with Legacy OS and logo would NOT be shown during post. Efi driver will still be installed with EFI OS.",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "EFI Driver",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "5": {
+    "varoff": 5,
+    "hex_off": "0x005",
+    "op": "ONE_OF",
+    "qid": 238,
+    "prompt": "USB Support",
+    "help": "If Disabled, all USB devices will NOT be available until after OS boot. If Partial Initial, USB Mass Storage and specific USB port/device will NOT be available before OS boot. If Enabled, all USB devices will be available in OS and Post.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Full Initial",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Partial Initial",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "9": {
+    "varoff": 9,
+    "hex_off": "0x009",
+    "op": "ONE_OF",
+    "qid": 239,
+    "prompt": "Network Stack Driver Support",
+    "help": "If Disabled, NetWork Stack Driver will be skipped.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "8": {
+    "varoff": 8,
+    "hex_off": "0x008",
+    "op": "ONE_OF",
+    "qid": 240,
+    "prompt": "Redirection Support",
+    "help": "If disable, Redirection function will be disabled.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "14": {
+    "varoff": 14,
+    "hex_off": "0x00e",
+    "op": "ONE_OF",
+    "qid": 241,
+    "prompt": "Enter UEFI Setup on Next Boot",
+    "help": "This is used by Windows Application. It is hiden in BIOS Setup",
+    "options": [
+      {
+        "text": "OFF",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "ON",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "547": {
+    "varoff": 547,
+    "hex_off": "0x223",
+    "op": "ONE_OF",
+    "qid": 10248,
+    "prompt": "Windows 10 Features",
+    "help": "Select Windows 8/10 to enable Windows boot features such as Secure Boot.\r\nNote: Secure boot options will be shown below when Windows 8/10 is selected.",
+    "options": [
+      {
+        "text": "Other OS",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Windows 10",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Windows 10 WHQL",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "536": {
+    "varoff": 536,
+    "hex_off": "0x218",
+    "op": "ONE_OF",
+    "qid": 242,
+    "prompt": "CSM Support",
+    "help": "Enable/Disable CSM Support.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "543": {
+    "varoff": 543,
+    "hex_off": "0x21f",
+    "op": "ONE_OF",
+    "qid": 243,
+    "prompt": "LAN PXE Boot Option ROM",
+    "help": "Enable or Disable Boot Option for Legacy Network Devices",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "544": {
+    "varoff": 544,
+    "hex_off": "0x220",
+    "op": "ONE_OF",
+    "qid": 244,
+    "prompt": "Storage Boot Option Control",
+    "help": "Controls the execution of UEFI and Legacy Storage OpROM",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "UEFI Only",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Legacy Only",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      },
+      {
+        "val": "0100",
+        "id": 256
+      }
+    ]
+  },
+  "546": {
+    "varoff": 546,
+    "hex_off": "0x222",
+    "op": "ONE_OF",
+    "qid": 245,
+    "prompt": "Other PCI Device ROM Priority",
+    "help": "For PCI devices other than Network, Mass storage or Video defines which OpROM to launch",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "UEFI Only",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Legacy Only",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "49": {
+    "varoff": 49,
+    "hex_off": "0x031",
+    "op": "ONE_OF",
+    "qid": 249,
+    "prompt": "AMD CPU fTPM",
+    "help": "Enable or Disable AMD CPU fTPM.",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "56": {
+    "varoff": 56,
+    "hex_off": "0x038",
+    "op": "ONE_OF",
+    "qid": 250,
+    "prompt": "Initial Display Output",
+    "help": "Select which video display output will be enabled during POST",
+    "options": [
+      {
+        "text": "IGD Video",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 1 Slot",
+        "flags": 34,
+        "type": 2
+      },
+      {
+        "text": "PCIe 2 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 3 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 4 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 5 Slot",
+        "flags": 2,
+        "type": 2
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000020001",
+        "id": 3
+      }
+    ]
+  },
+  "60": {
+    "varoff": 60,
+    "hex_off": "0x03c",
+    "op": "ONE_OF",
+    "qid": 251,
+    "prompt": "Initial Display Output",
+    "help": "Select which video display output will be enabled during POST",
+    "options": [
+      {
+        "text": "PCIe 1 Slot",
+        "flags": 34,
+        "type": 2
+      },
+      {
+        "text": "PCIe 2 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 3 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 4 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 5 Slot",
+        "flags": 2,
+        "type": 2
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000020001",
+        "id": 3
+      }
+    ]
+  },
+  "64": {
+    "varoff": 64,
+    "hex_off": "0x040",
+    "op": "ONE_OF",
+    "qid": 252,
+    "prompt": "Initial Display Output",
+    "help": "Select which video display output will be enabled during POST",
+    "options": [
+      {
+        "text": "IGD Video",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 1 Slot",
+        "flags": 34,
+        "type": 2
+      },
+      {
+        "text": "PCIe 2 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 3 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 4 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 5 Slot",
+        "flags": 2,
+        "type": 2
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000020001",
+        "id": 1
+      }
+    ]
+  },
+  "68": {
+    "varoff": 68,
+    "hex_off": "0x044",
+    "op": "ONE_OF",
+    "qid": 253,
+    "prompt": "Initial Display Output",
+    "help": "Select which video display output will be enabled during POST",
+    "options": [
+      {
+        "text": "IGD Video",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 1 Slot",
+        "flags": 34,
+        "type": 2
+      },
+      {
+        "text": "PCIe 2 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 3 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 4 Slot",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "PCIe 5 Slot",
+        "flags": 2,
+        "type": 2
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000020001",
+        "id": 1
+      }
+    ]
+  },
+  "622": {
+    "varoff": 622,
+    "hex_off": "0x26e",
+    "op": "ONE_OF",
+    "qid": 255,
+    "prompt": "LEDs in System Power On State",
+    "help": "LEDs in System Power On State: On/Off",
+    "options": [
+      {
+        "text": "Off",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "On",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "623": {
+    "varoff": 623,
+    "hex_off": "0x26f",
+    "op": "ONE_OF",
+    "qid": 256,
+    "prompt": "LEDs in Sleep, Hibernation, and Soft Off States",
+    "help": "LEDs in Sleep, Hibernation, and Soft Off States: On / Off",
+    "options": [
+      {
+        "text": "Off",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "On",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "636": {
+    "varoff": 636,
+    "hex_off": "0x27c",
+    "op": "ONE_OF",
+    "qid": 257,
+    "prompt": "HD Audio Controller",
+    "help": "Enable/Disable HD Audio Controller",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "637": {
+    "varoff": 637,
+    "hex_off": "0x27d",
+    "op": "ONE_OF",
+    "qid": 258,
+    "prompt": "Onboard LAN Controller",
+    "help": "Enable/Disable Onboard LAN Controller",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "638": {
+    "varoff": 638,
+    "hex_off": "0x27e",
+    "op": "ONE_OF",
+    "qid": 259,
+    "prompt": "Above 4G Decoding",
+    "help": "Globally Enables or Disables 64bit capable Devices to be Decoded in Above 4G Address Space (Only if System Supports 64 bit PCI Decoding).",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "639": {
+    "varoff": 639,
+    "hex_off": "0x27f",
+    "op": "ONE_OF",
+    "qid": 10795,
+    "prompt": "Re-Size BAR Support",
+    "help": "If system has Resizable BAR capable PCIe Devices, this option Enables or Disables Resizable BAR Support(Only if System Supports 64 bit PCI Decoding).",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      },
+      {
+        "val": "0100",
+        "id": 0
+      }
+    ]
+  },
+  "20": {
+    "varoff": 20,
+    "hex_off": "0x014",
+    "op": "ONE_OF",
+    "qid": 288,
+    "prompt": "Security Device Support",
+    "help": "Enables or Disables BIOS support for security device. O.S. will not show Security Device. TCG EFI protocol and INT1A interface will not be available.",
+    "options": [
+      {
+        "text": "Disable",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enable",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "47": {
+    "varoff": 47,
+    "hex_off": "0x02f",
+    "op": "ONE_OF",
+    "qid": 289,
+    "prompt": "Disable Block Sid",
+    "help": "Override to allow SID authentication in TCG Storage device",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "15": {
+    "varoff": 15,
+    "hex_off": "0x00f",
+    "op": "ONE_OF",
+    "qid": 291,
+    "prompt": "TPM State",
+    "help": "Enable/Disable Security Device. NOTE: Your Computer will reboot during restart in order to change State of the Device.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "16": {
+    "varoff": 16,
+    "hex_off": "0x010",
+    "op": "ONE_OF",
+    "qid": 292,
+    "prompt": "Pending operation",
+    "help": "Schedule an Operation for the Security Device. NOTE: Your Computer will reboot during restart in order to change State of Security Device.",
+    "options": [
+      {
+        "text": "None",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "TPM Clear",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "32": {
+    "varoff": 32,
+    "hex_off": "0x020",
+    "op": "ONE_OF",
+    "qid": 298,
+    "prompt": "TPM 2.0 InterfaceType",
+    "help": "Select the Communication Interface to TPM 20 Device.",
+    "options": [
+      {
+        "text": "CRB",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "TIS",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "50": {
+    "varoff": 50,
+    "hex_off": "0x032",
+    "op": "ONE_OF",
+    "qid": 301,
+    "prompt": "Erase fTPM NV for factory reset",
+    "help": "When New CPU is installed, Select \"Enabled\" to reset fTPM, if you have BitLocker or encryption-enabled system, the system will not boot without a recovery key. Select \"Disabled\" to keep previous fTPM record and continue system boot, fTPM will NOT be enabled with new CPU unless fTPM is reset (reinitialized), you could swap back to the old CPU to recover TPM related keys and data.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "72": {
+    "varoff": 72,
+    "hex_off": "0x048",
+    "op": "CHECK_BOX",
+    "qid": 302,
+    "prompt": "Enable ACPI Auto Configuration",
+    "help": "Enables or Disables BIOS ACPI Auto Configuration.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      },
+      {
+        "val": "0100",
+        "id": 0
+      }
+    ]
+  },
+  "75": {
+    "varoff": 75,
+    "hex_off": "0x04b",
+    "op": "CHECK_BOX",
+    "qid": 303,
+    "prompt": "Enable Hibernation",
+    "help": "Enables or Disables System ability to Hibernate (OS/S4 Sleep State). This option may not be effective with some operating systems.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      },
+      {
+        "val": "0100",
+        "id": 256
+      }
+    ]
+  },
+  "73": {
+    "varoff": 73,
+    "hex_off": "0x049",
+    "op": "ONE_OF",
+    "qid": 304,
+    "prompt": "ACPI Sleep State",
+    "help": "Select the highest ACPI sleep state the system will enter when the SUSPEND button is pressed.",
+    "options": [
+      {
+        "text": "Suspend Disabled",
+        "flags": 1,
+        "type": 1
+      },
+      {
+        "text": "S3 (Suspend to RAM)",
+        "flags": 49,
+        "type": 1
+      }
+    ],
+    "defaults": []
+  },
+  "231": {
+    "varoff": 231,
+    "hex_off": "0x0e7",
+    "op": "ONE_OF",
+    "qid": 311,
+    "prompt": "SATA Mode",
+    "help": "Select SATA Type",
+    "options": [
+      {
+        "text": "AHCI",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RAID",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "232": {
+    "varoff": 232,
+    "hex_off": "0x0e8",
+    "op": "ONE_OF",
+    "qid": 312,
+    "prompt": "Aggresive SATA Device Sleep Port 0",
+    "help": "Aggresive SATA Device Sleep Port 0",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "233": {
+    "varoff": 233,
+    "hex_off": "0x0e9",
+    "op": "ONE_OF",
+    "qid": 313,
+    "prompt": "Aggresive SATA Device Sleep Port 1",
+    "help": "Aggresive SATA Device Sleep Port 1",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "207": {
+    "varoff": 207,
+    "hex_off": "0x0cf",
+    "op": "ONE_OF",
+    "qid": 314,
+    "prompt": "XHCI GEN1",
+    "help": "XHCI GEN1",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "208": {
+    "varoff": 208,
+    "hex_off": "0x0d0",
+    "op": "ONE_OF",
+    "qid": 315,
+    "prompt": "XHCI GEN2",
+    "help": "XHCI GEN2",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 512
+      }
+    ]
+  },
+  "209": {
+    "varoff": 209,
+    "hex_off": "0x0d1",
+    "op": "ONE_OF",
+    "qid": 316,
+    "prompt": "USB Equalization4",
+    "help": "USB Equalization4",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "210": {
+    "varoff": 210,
+    "hex_off": "0x0d2",
+    "op": "ONE_OF",
+    "qid": 317,
+    "prompt": "USB Redriver",
+    "help": "USB Redriver",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "211": {
+    "varoff": 211,
+    "hex_off": "0x0d3",
+    "op": "ONE_OF",
+    "qid": 318,
+    "prompt": "USB31 PORT0",
+    "help": "USB31 PORT0",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "212": {
+    "varoff": 212,
+    "hex_off": "0x0d4",
+    "op": "ONE_OF",
+    "qid": 319,
+    "prompt": "USB31 PORT1",
+    "help": "USB31 PORT1",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "213": {
+    "varoff": 213,
+    "hex_off": "0x0d5",
+    "op": "ONE_OF",
+    "qid": 320,
+    "prompt": "USB30 PORT0",
+    "help": "USB30 PORT0",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "214": {
+    "varoff": 214,
+    "hex_off": "0x0d6",
+    "op": "ONE_OF",
+    "qid": 321,
+    "prompt": "USB30 PORT1",
+    "help": "USB30 PORT1",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "215": {
+    "varoff": 215,
+    "hex_off": "0x0d7",
+    "op": "ONE_OF",
+    "qid": 322,
+    "prompt": "USB30 PORT2",
+    "help": "USB30 PORT2",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "216": {
+    "varoff": 216,
+    "hex_off": "0x0d8",
+    "op": "ONE_OF",
+    "qid": 323,
+    "prompt": "USB30 PORT3",
+    "help": "USB30 PORT3",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "217": {
+    "varoff": 217,
+    "hex_off": "0x0d9",
+    "op": "ONE_OF",
+    "qid": 324,
+    "prompt": "USB30 PORT4",
+    "help": "USB30 PORT4",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "218": {
+    "varoff": 218,
+    "hex_off": "0x0da",
+    "op": "ONE_OF",
+    "qid": 325,
+    "prompt": "USB30 PORT5",
+    "help": "USB30 PORT5",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "219": {
+    "varoff": 219,
+    "hex_off": "0x0db",
+    "op": "ONE_OF",
+    "qid": 326,
+    "prompt": "USB20 PORT0",
+    "help": "USB20 PORT0",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "220": {
+    "varoff": 220,
+    "hex_off": "0x0dc",
+    "op": "ONE_OF",
+    "qid": 327,
+    "prompt": "USB20 PORT1",
+    "help": "USB20 PORT1",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "221": {
+    "varoff": 221,
+    "hex_off": "0x0dd",
+    "op": "ONE_OF",
+    "qid": 328,
+    "prompt": "USB20 PORT2",
+    "help": "USB20 PORT2",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "222": {
+    "varoff": 222,
+    "hex_off": "0x0de",
+    "op": "ONE_OF",
+    "qid": 329,
+    "prompt": "USB20 PORT3",
+    "help": "USB20 PORT3",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "223": {
+    "varoff": 223,
+    "hex_off": "0x0df",
+    "op": "ONE_OF",
+    "qid": 330,
+    "prompt": "USB20 PORT4",
+    "help": "USB20 PORT4",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "224": {
+    "varoff": 224,
+    "hex_off": "0x0e0",
+    "op": "ONE_OF",
+    "qid": 331,
+    "prompt": "USB20 PORT5",
+    "help": "USB20 PORT5",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "262": {
+    "varoff": 262,
+    "hex_off": "0x106",
+    "op": "ONE_OF",
+    "qid": 332,
+    "prompt": "PCIE PORT 0",
+    "help": "Enable or disable PCIE PORT 0. If PORT 0 disabled, PORT 1 should be disabled as Chipset spec defined when your Board use AMD 300-Series Chipset.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "263": {
+    "varoff": 263,
+    "hex_off": "0x107",
+    "op": "ONE_OF",
+    "qid": 333,
+    "prompt": "PCIE PORT 1",
+    "help": "Enable or disable PCIE PORT 1",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "264": {
+    "varoff": 264,
+    "hex_off": "0x108",
+    "op": "ONE_OF",
+    "qid": 334,
+    "prompt": "PCIE PORT 2",
+    "help": "Enable or disable PCIE PORT 2. If PORT 2 disabled, PORT 3 should be disabled as Chipset spec defined when your Board use AMD 300-Series Chipset.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "265": {
+    "varoff": 265,
+    "hex_off": "0x109",
+    "op": "ONE_OF",
+    "qid": 335,
+    "prompt": "PCIE PORT 3",
+    "help": "Enable or disable PCIE PORT 3",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "266": {
+    "varoff": 266,
+    "hex_off": "0x10a",
+    "op": "ONE_OF",
+    "qid": 336,
+    "prompt": "PCIE PORT 4",
+    "help": "Enable or disable PCIE PORT 4. If PORT 4 disabled, PORT 5 should be disabled as Chipset spec defined when your Board use AMD 300-Series Chipset.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "267": {
+    "varoff": 267,
+    "hex_off": "0x10b",
+    "op": "ONE_OF",
+    "qid": 337,
+    "prompt": "PCIE PORT 5",
+    "help": "Enable or disable PCIE PORT 5",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "268": {
+    "varoff": 268,
+    "hex_off": "0x10c",
+    "op": "ONE_OF",
+    "qid": 338,
+    "prompt": "PCIE PORT 6",
+    "help": "Enable or disable PCIE PORT 6. If PORT 6 disabled, PORT 7 should be disabled as Chipset spec defined when your Board use AMD 300-Series Chipset.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "269": {
+    "varoff": 269,
+    "hex_off": "0x10d",
+    "op": "ONE_OF",
+    "qid": 339,
+    "prompt": "PCIE PORT 7",
+    "help": "Enable or disable PCIE PORT 7",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "270": {
+    "varoff": 270,
+    "hex_off": "0x10e",
+    "op": "ONE_OF",
+    "qid": 341,
+    "prompt": "GPP Clock 0 Force Output",
+    "help": "Enable or disable Gpp clock 0 force output",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "271": {
+    "varoff": 271,
+    "hex_off": "0x10f",
+    "op": "ONE_OF",
+    "qid": 342,
+    "prompt": "GPP Clock 1 Force Output",
+    "help": "Enable or disable Gpp clock 1 force output",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "272": {
+    "varoff": 272,
+    "hex_off": "0x110",
+    "op": "ONE_OF",
+    "qid": 343,
+    "prompt": "GPP Clock 2 Force Output",
+    "help": "Enable or disable Gpp clock 2 force output",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "273": {
+    "varoff": 273,
+    "hex_off": "0x111",
+    "op": "ONE_OF",
+    "qid": 344,
+    "prompt": "GPP Clock 3 Force Output",
+    "help": "Enable or disable Gpp clock 3 force output",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "274": {
+    "varoff": 274,
+    "hex_off": "0x112",
+    "op": "ONE_OF",
+    "qid": 345,
+    "prompt": "GPP Clock 4 Force Output",
+    "help": "Enable or disable Gpp clock 4 force output",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "275": {
+    "varoff": 275,
+    "hex_off": "0x113",
+    "op": "ONE_OF",
+    "qid": 346,
+    "prompt": "GPP Clock 5 Force Output",
+    "help": "Enable or disable Gpp clock 5 force output",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "276": {
+    "varoff": 276,
+    "hex_off": "0x114",
+    "op": "ONE_OF",
+    "qid": 347,
+    "prompt": "GPP Clock 6 Force Output",
+    "help": "Enable or disable Gpp clock 6 force output",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "277": {
+    "varoff": 277,
+    "hex_off": "0x115",
+    "op": "ONE_OF",
+    "qid": 348,
+    "prompt": "GPP Clock 7 Force Output",
+    "help": "Enable or disable Gpp clock 7 force output",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 16,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "278": {
+    "varoff": 278,
+    "hex_off": "0x116",
+    "op": "ONE_OF",
+    "qid": 349,
+    "prompt": "SATA PORT 0 Enable",
+    "help": "Enable or disable SATA PORT 0",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "279": {
+    "varoff": 279,
+    "hex_off": "0x117",
+    "op": "ONE_OF",
+    "qid": 350,
+    "prompt": "SATA PORT 1 Enable",
+    "help": "Enable or disable SATA PORT 1",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "280": {
+    "varoff": 280,
+    "hex_off": "0x118",
+    "op": "ONE_OF",
+    "qid": 351,
+    "prompt": "SATA PORT 2 Enable",
+    "help": "Enable or disable SATA PORT 2",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "281": {
+    "varoff": 281,
+    "hex_off": "0x119",
+    "op": "ONE_OF",
+    "qid": 352,
+    "prompt": "SATA PORT 3 Enable",
+    "help": "Enable or disable SATA PORT 3",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "282": {
+    "varoff": 282,
+    "hex_off": "0x11a",
+    "op": "ONE_OF",
+    "qid": 353,
+    "prompt": "SATA PORT 4 Enable",
+    "help": "Enable or disable SATA PORT 4",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "283": {
+    "varoff": 283,
+    "hex_off": "0x11b",
+    "op": "ONE_OF",
+    "qid": 354,
+    "prompt": "SATA PORT 5 Enable",
+    "help": "Enable or disable SATA PORT 5",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "284": {
+    "varoff": 284,
+    "hex_off": "0x11c",
+    "op": "ONE_OF",
+    "qid": 355,
+    "prompt": "SATA PORT 6 Enable",
+    "help": "Enable or disable SATA PORT 6",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "285": {
+    "varoff": 285,
+    "hex_off": "0x11d",
+    "op": "ONE_OF",
+    "qid": 356,
+    "prompt": "SATA PORT 7 Enable",
+    "help": "Enable or disable SATA PORT 7",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "287": {
+    "varoff": 287,
+    "hex_off": "0x11f",
+    "op": "ONE_OF",
+    "qid": 357,
+    "prompt": "Onboard PCIE LAN PXE ROM",
+    "help": "The Onboard PCIE LAN PXE ROM",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "291": {
+    "varoff": 291,
+    "hex_off": "0x123",
+    "op": "ONE_OF",
+    "qid": 358,
+    "prompt": "CRB test",
+    "help": "CRB test",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "566": {
+    "varoff": 566,
+    "hex_off": "0x236",
+    "op": "ONE_OF",
+    "qid": 359,
+    "prompt": "AMD Cool&Quiet function",
+    "help": "Enable or Disable AMD Cool&Quiet function.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "568": {
+    "varoff": 568,
+    "hex_off": "0x238",
+    "op": "ONE_OF",
+    "qid": 360,
+    "prompt": "PPC Adjustment",
+    "help": "Provide to adjust _PPC object.",
+    "options": [
+      {
+        "text": "PState 0",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "570": {
+    "varoff": 570,
+    "hex_off": "0x23a",
+    "op": "ONE_OF",
+    "qid": 368,
+    "prompt": "NX Mode",
+    "help": "Enable/disable No-execute page protection Function",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "569": {
+    "varoff": 569,
+    "hex_off": "0x239",
+    "op": "ONE_OF",
+    "qid": 369,
+    "prompt": "SVM Mode",
+    "help": "Enable/Disable CPU Virtualization.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "611": {
+    "varoff": 611,
+    "hex_off": "0x263",
+    "op": "ONE_OF",
+    "qid": 10273,
+    "prompt": "Output Select",
+    "help": "Output Interface",
+    "options": [
+      {
+        "text": "Unknown Device",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "612": {
+    "varoff": 612,
+    "hex_off": "0x264",
+    "op": "ONE_OF",
+    "qid": 412,
+    "prompt": "APP Center Download & Install",
+    "help": "APP Center Download & Install",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "618": {
+    "varoff": 618,
+    "hex_off": "0x26a",
+    "op": "NUMERIC",
+    "qid": 420,
+    "prompt": "LED Hue",
+    "help": "Select the Full LED Hue.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000020021",
+        "id": 255
+      }
+    ]
+  },
+  "617": {
+    "varoff": 617,
+    "hex_off": "0x269",
+    "op": "ONE_OF",
+    "qid": 421,
+    "prompt": "RGB Fusion",
+    "help": "Onboard RGB Fusion mode",
+    "options": [
+      {
+        "text": "Off",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Pulse Mode",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Color Cycle",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Static Mode",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Flash Mode",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Double Flash",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Demo Mode",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 768
+      }
+    ]
+  },
+  "607": {
+    "varoff": 607,
+    "hex_off": "0x25f",
+    "op": "ONE_OF",
+    "qid": 422,
+    "prompt": "IOMMU",
+    "help": "Enable/Disable IOMMU Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "599": {
+    "varoff": 599,
+    "hex_off": "0x257",
+    "op": "ONE_OF",
+    "qid": 423,
+    "prompt": "Integrated Graphics",
+    "help": "Enable Integrate Graphics Controller",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Force",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "600": {
+    "varoff": 600,
+    "hex_off": "0x258",
+    "op": "ONE_OF",
+    "qid": 424,
+    "prompt": "UMA Frame Buffer Size",
+    "help": "Set UMA FB Size",
+    "options": [
+      {
+        "text": "64M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "128M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "256M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "384M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "512M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "80M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "96M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "768M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "1G",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "2G",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "3G",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "4G",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "8G",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "16G",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "Auto",
+        "flags": 50,
+        "type": 2
+      }
+    ],
+    "defaults": []
+  },
+  "625": {
+    "varoff": 625,
+    "hex_off": "0x271",
+    "op": "ONE_OF",
+    "qid": 10794,
+    "prompt": "Integrated Graphics",
+    "help": "Enable Integrate Graphics Controller",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Forces",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 3840
+      }
+    ]
+  },
+  "626": {
+    "varoff": 626,
+    "hex_off": "0x272",
+    "op": "ONE_OF",
+    "qid": 425,
+    "prompt": "UMA Mode",
+    "help": "UMA Mode",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "UMA Specified",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "UMA Auto",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "UMA Game Optimized",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "627": {
+    "varoff": 627,
+    "hex_off": "0x273",
+    "op": "ONE_OF",
+    "qid": 426,
+    "prompt": "UMA Frame Buffer Size",
+    "help": "Set UMA FB Size",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 50,
+        "type": 2
+      },
+      {
+        "text": "64M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "80M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "96M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "128M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "256M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "384M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "512M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "768M",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "1G",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "2G",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "4G",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "8G",
+        "flags": 2,
+        "type": 2
+      },
+      {
+        "text": "16G",
+        "flags": 2,
+        "type": 2
+      }
+    ],
+    "defaults": []
+  },
+  "631": {
+    "varoff": 631,
+    "hex_off": "0x277",
+    "op": "ONE_OF",
+    "qid": 427,
+    "prompt": "Display Resulotuon",
+    "help": "Display Resulotuon",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "1920x1080 and below",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "2560x1600",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "3840x2160",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "641": {
+    "varoff": 641,
+    "hex_off": "0x281",
+    "op": "ONE_OF",
+    "qid": 428,
+    "prompt": "PCIEX16 Bifurcation",
+    "help": "PCIEX16 to 2x8, 1x8/2x4 or 4x4",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "PCIE 2x8",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "PCIE 1x8/2x4",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "PCIE 4x4",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "632": {
+    "varoff": 632,
+    "hex_off": "0x278",
+    "op": "ONE_OF",
+    "qid": 429,
+    "prompt": "SATA Mode",
+    "help": "Select SATA Type",
+    "options": [
+      {
+        "text": "AHCI",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "RAID",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 512
+      }
+    ]
+  },
+  "633": {
+    "varoff": 633,
+    "hex_off": "0x279",
+    "op": "ONE_OF",
+    "qid": 430,
+    "prompt": "NVMe RAID mode",
+    "help": "Enable/Disable NVMe RAID Mode",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "230": {
+    "varoff": 230,
+    "hex_off": "0x0e6",
+    "op": "ONE_OF",
+    "qid": 431,
+    "prompt": "Chipset SATA Port Enable",
+    "help": "Enabled / Disabled Serial ATA",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "240": {
+    "varoff": 240,
+    "hex_off": "0x0f0",
+    "op": "ONE_OF",
+    "qid": 432,
+    "prompt": "Chipset SATA Port Hot Plug",
+    "help": "Enabled / Disabled Serial ATA Hot Plug",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "80": {
+    "varoff": 80,
+    "hex_off": "0x050",
+    "op": "ONE_OF",
+    "qid": 450,
+    "prompt": "OnChip SATA Channel",
+    "help": "Enabled / Disabled Serial ATA",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "81": {
+    "varoff": 81,
+    "hex_off": "0x051",
+    "op": "ONE_OF",
+    "qid": 451,
+    "prompt": "OnChip SATA Type",
+    "help": "Native IDE /n RAID /n AHCI /n AHCI /n Legacy IDE /n IDE->AHCI /n HyperFlash",
+    "options": [
+      {
+        "text": "Native IDE",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RAID",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "AHCI",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Legacy IDE",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "AHCI as ID 7804",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "82": {
+    "varoff": 82,
+    "hex_off": "0x052",
+    "op": "ONE_OF",
+    "qid": 452,
+    "prompt": "RAID Type",
+    "help": "RAID Or RAID5",
+    "options": [
+      {
+        "text": "RAID",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "RAID5",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "85": {
+    "varoff": 85,
+    "hex_off": "0x055",
+    "op": "ONE_OF",
+    "qid": 453,
+    "prompt": "XHCI Controller 1",
+    "help": "XHCI Enable Help",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "94": {
+    "varoff": 94,
+    "hex_off": "0x05e",
+    "op": "ONE_OF",
+    "qid": 454,
+    "prompt": "XHCI0 Port 0",
+    "help": "Bristol:Enabled/Disabled XHCI Port 0; Summit:Disable XHCI Port0, Port1-3 all disabled",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "95": {
+    "varoff": 95,
+    "hex_off": "0x05f",
+    "op": "ONE_OF",
+    "qid": 455,
+    "prompt": "XHCI0 Port 1",
+    "help": "Enabled/Disabled XHCI0 Port 1(XHCI/EHCI)",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "96": {
+    "varoff": 96,
+    "hex_off": "0x060",
+    "op": "ONE_OF",
+    "qid": 456,
+    "prompt": "XHCI0 Port 2",
+    "help": "Enabled/Disabled XHCI0 Port 2(XHCI/EHCI)",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "97": {
+    "varoff": 97,
+    "hex_off": "0x061",
+    "op": "ONE_OF",
+    "qid": 457,
+    "prompt": "XHCI0 Port 3",
+    "help": "Enabled/Disabled XHCI0 Port 3(XHCI/EHCI)",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "87": {
+    "varoff": 87,
+    "hex_off": "0x057",
+    "op": "ONE_OF",
+    "qid": 458,
+    "prompt": "EHCI HC(Bus 0 Dev 18 Fn 0)",
+    "help": "EHCI1 Controller Enable",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "88": {
+    "varoff": 88,
+    "hex_off": "0x058",
+    "op": "ONE_OF",
+    "qid": 459,
+    "prompt": "USB Internal Port 0",
+    "help": "Enabled/Disabled USB Internal Port 0",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "90": {
+    "varoff": 90,
+    "hex_off": "0x05a",
+    "op": "ONE_OF",
+    "qid": 460,
+    "prompt": "HUB Port 0",
+    "help": "Enabled/Disabled HUB Port 0",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "91": {
+    "varoff": 91,
+    "hex_off": "0x05b",
+    "op": "ONE_OF",
+    "qid": 461,
+    "prompt": "HUB Port 1",
+    "help": "Enabled/Disabled HUB Port 1",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "92": {
+    "varoff": 92,
+    "hex_off": "0x05c",
+    "op": "ONE_OF",
+    "qid": 462,
+    "prompt": "HUB Port 2",
+    "help": "Enabled/Disabled HUB Port 2",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "93": {
+    "varoff": 93,
+    "hex_off": "0x05d",
+    "op": "ONE_OF",
+    "qid": 463,
+    "prompt": "HUB Port 3",
+    "help": "Enabled/Disabled HUB Port 3",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "89": {
+    "varoff": 89,
+    "hex_off": "0x059",
+    "op": "ONE_OF",
+    "qid": 464,
+    "prompt": "USB Internal Port 1",
+    "help": "Enabled/Disabled USB Internal Port 1",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "100": {
+    "varoff": 100,
+    "hex_off": "0x064",
+    "op": "ONE_OF",
+    "qid": 473,
+    "prompt": "XHCI1 Port 0",
+    "help": "Enabled/Disabled XHCI1 Port 0(XHCI/EHCI)",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "101": {
+    "varoff": 101,
+    "hex_off": "0x065",
+    "op": "ONE_OF",
+    "qid": 474,
+    "prompt": "XHCI1 Port 1",
+    "help": "Enabled/Disabled XHCI1 Port 1(XHCI/EHCI)",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "98": {
+    "varoff": 98,
+    "hex_off": "0x062",
+    "op": "ONE_OF",
+    "qid": 479,
+    "prompt": "XHCI0 Port 4",
+    "help": "Enabled/Disabled XHCI0 Port 4(XHCI/EHCI)",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "99": {
+    "varoff": 99,
+    "hex_off": "0x063",
+    "op": "ONE_OF",
+    "qid": 480,
+    "prompt": "XHCI0 Port 5",
+    "help": "Enabled/Disabled XHCI0 Port 5(XHCI/EHCI)",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "103": {
+    "varoff": 103,
+    "hex_off": "0x067",
+    "op": "ONE_OF",
+    "qid": 489,
+    "prompt": "IR Config",
+    "help": "Infrared (IR) Configuration",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "RX & TX0 Only",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RX & TX1 Only",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "RX, TX0, And TX1",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "104": {
+    "varoff": 104,
+    "hex_off": "0x068",
+    "op": "ONE_OF",
+    "qid": 490,
+    "prompt": "SD Mode",
+    "help": "SD Mode Configuration",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Ver2.0",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Ver3.0",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "V3_SDR50",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "V3_SDR104",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "V3_DDR50",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "SdDump",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto(Ver2.0+Low speed)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "109": {
+    "varoff": 109,
+    "hex_off": "0x06d",
+    "op": "ONE_OF",
+    "qid": 491,
+    "prompt": "SdForce18 Enable",
+    "help": "Enable SdForce18",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "110": {
+    "varoff": 110,
+    "hex_off": "0x06e",
+    "op": "ONE_OF",
+    "qid": 492,
+    "prompt": "SD Mode configuration",
+    "help": "SD Mode",
+    "options": [
+      {
+        "text": "AMDA",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "DMA",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "PIO",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "116": {
+    "varoff": 116,
+    "hex_off": "0x074",
+    "op": "ONE_OF",
+    "qid": 493,
+    "prompt": "Uart 0 Enable",
+    "help": "Uart 0 Enable",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "117": {
+    "varoff": 117,
+    "hex_off": "0x075",
+    "op": "ONE_OF",
+    "qid": 494,
+    "prompt": "Uart 1 Enable",
+    "help": "Uart 1 Enable",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "112": {
+    "varoff": 112,
+    "hex_off": "0x070",
+    "op": "ONE_OF",
+    "qid": 495,
+    "prompt": "I2C 0 Enable",
+    "help": "I2C 0 Enable",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "113": {
+    "varoff": 113,
+    "hex_off": "0x071",
+    "op": "ONE_OF",
+    "qid": 496,
+    "prompt": "I2C 1 Enable",
+    "help": "I2C 1 Enable",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "114": {
+    "varoff": 114,
+    "hex_off": "0x072",
+    "op": "ONE_OF",
+    "qid": 497,
+    "prompt": "I2C 2 Enable",
+    "help": "I2C 2 Enable",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "115": {
+    "varoff": 115,
+    "hex_off": "0x073",
+    "op": "ONE_OF",
+    "qid": 498,
+    "prompt": "I2C 3 Enable",
+    "help": "I2C 3 Enable",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "118": {
+    "varoff": 118,
+    "hex_off": "0x076",
+    "op": "ONE_OF",
+    "qid": 499,
+    "prompt": "AB Clock Gating",
+    "help": "Enable/Disable AB Internal Clock Gating",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "119": {
+    "varoff": 119,
+    "hex_off": "0x077",
+    "op": "ONE_OF",
+    "qid": 500,
+    "prompt": "PCIB Clock Run",
+    "help": "Enable The Auto Clkrun Functionality",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "204": {
+    "varoff": 204,
+    "hex_off": "0x0cc",
+    "op": "ONE_OF",
+    "qid": 506,
+    "prompt": "Restore On AC Power Loss",
+    "help": "Restore Status On AC Power Loss",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Power On",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Power Off",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Last State",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "111": {
+    "varoff": 111,
+    "hex_off": "0x06f",
+    "op": "ONE_OF",
+    "qid": 507,
+    "prompt": "GPIO Devices Support",
+    "help": "Enable/Disable GPIO ACPI Devices Support, disable it will disable i2C and uart interface device.",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "120": {
+    "varoff": 120,
+    "hex_off": "0x078",
+    "op": "ONE_OF",
+    "qid": 508,
+    "prompt": "ESATA Port On Port 0",
+    "help": "Enabled / Disabled Serial ATA Hot Plug",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "121": {
+    "varoff": 121,
+    "hex_off": "0x079",
+    "op": "ONE_OF",
+    "qid": 509,
+    "prompt": "ESATA Port On Port 1",
+    "help": "Enabled / Disabled Serial ATA Hot Plug",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "122": {
+    "varoff": 122,
+    "hex_off": "0x07a",
+    "op": "ONE_OF",
+    "qid": 510,
+    "prompt": "ESATA Port On Port 2",
+    "help": "Enabled / Disabled Serial ATA Hot Plug",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "123": {
+    "varoff": 123,
+    "hex_off": "0x07b",
+    "op": "ONE_OF",
+    "qid": 511,
+    "prompt": "ESATA Port On Port 3",
+    "help": "Enabled / Disabled Serial ATA Hot Plug",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "124": {
+    "varoff": 124,
+    "hex_off": "0x07c",
+    "op": "ONE_OF",
+    "qid": 512,
+    "prompt": "ESATA Port On Port 4",
+    "help": "Enabled / Disabled Serial ATA Hot Plug",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "125": {
+    "varoff": 125,
+    "hex_off": "0x07d",
+    "op": "ONE_OF",
+    "qid": 513,
+    "prompt": "ESATA Port On Port 5",
+    "help": "Enabled / Disabled Serial ATA Hot Plug",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "126": {
+    "varoff": 126,
+    "hex_off": "0x07e",
+    "op": "ONE_OF",
+    "qid": 514,
+    "prompt": "ESATA Port On Port 6",
+    "help": "Enabled / Disabled Serial ATA Hot Plug",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "127": {
+    "varoff": 127,
+    "hex_off": "0x07f",
+    "op": "ONE_OF",
+    "qid": 515,
+    "prompt": "ESATA Port On Port 7",
+    "help": "Enabled / Disabled Serial ATA Hot Plug",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "128": {
+    "varoff": 128,
+    "hex_off": "0x080",
+    "op": "ONE_OF",
+    "qid": 516,
+    "prompt": "SATA Power On Port 0",
+    "help": "SATA Port Power Enabled/Disabled",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Power Down",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "129": {
+    "varoff": 129,
+    "hex_off": "0x081",
+    "op": "ONE_OF",
+    "qid": 517,
+    "prompt": "SATA Power On Port 1",
+    "help": "SATA Port Power Enabled/Disabled",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Power Down",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "130": {
+    "varoff": 130,
+    "hex_off": "0x082",
+    "op": "ONE_OF",
+    "qid": 518,
+    "prompt": "SATA Power On Port 2",
+    "help": "SATA Port Power Enabled/Disabled",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Power Down",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "131": {
+    "varoff": 131,
+    "hex_off": "0x083",
+    "op": "ONE_OF",
+    "qid": 519,
+    "prompt": "SATA Power On Port 3",
+    "help": "SATA Port Power Enabled/Disabled",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Power Down",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "132": {
+    "varoff": 132,
+    "hex_off": "0x084",
+    "op": "ONE_OF",
+    "qid": 520,
+    "prompt": "SATA Power On Port 4",
+    "help": "SATA Port Power Enabled/Disabled",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Power Down",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "133": {
+    "varoff": 133,
+    "hex_off": "0x085",
+    "op": "ONE_OF",
+    "qid": 521,
+    "prompt": "SATA Power On Port 5",
+    "help": "SATA Port Power Enabled/Disabled",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Power Down",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "134": {
+    "varoff": 134,
+    "hex_off": "0x086",
+    "op": "ONE_OF",
+    "qid": 522,
+    "prompt": "SATA Power On Port 6",
+    "help": "SATA Port Power Enabled/Disabled",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Power Down",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "135": {
+    "varoff": 135,
+    "hex_off": "0x087",
+    "op": "ONE_OF",
+    "qid": 523,
+    "prompt": "SATA Power On Port 7",
+    "help": "SATA Port Power Enabled/Disabled",
+    "options": [
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Power Down",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "136": {
+    "varoff": 136,
+    "hex_off": "0x088",
+    "op": "ONE_OF",
+    "qid": 524,
+    "prompt": "SATA Port 0 MODE",
+    "help": "Indicates The Highest Allowable Speed Of The SATA Port 0",
+    "options": [
+      {
+        "text": "Gen1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "137": {
+    "varoff": 137,
+    "hex_off": "0x089",
+    "op": "ONE_OF",
+    "qid": 525,
+    "prompt": "SATA Port 1 MODE",
+    "help": "Indicates The Highest Allowable Speed Of The SATA Port 1",
+    "options": [
+      {
+        "text": "Gen1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "138": {
+    "varoff": 138,
+    "hex_off": "0x08a",
+    "op": "ONE_OF",
+    "qid": 526,
+    "prompt": "SATA Port 2 MODE",
+    "help": "Indicates The Highest Allowable Speed Of The SATA Port 2",
+    "options": [
+      {
+        "text": "Gen1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "139": {
+    "varoff": 139,
+    "hex_off": "0x08b",
+    "op": "ONE_OF",
+    "qid": 527,
+    "prompt": "SATA Port 3 MODE",
+    "help": "Indicates The Highest Allowable Speed Of The SATA Port 3",
+    "options": [
+      {
+        "text": "Gen1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "140": {
+    "varoff": 140,
+    "hex_off": "0x08c",
+    "op": "ONE_OF",
+    "qid": 528,
+    "prompt": "SATA Port 4 MODE",
+    "help": "Indicates The Highest Allowable Speed Of The SATA Port 4",
+    "options": [
+      {
+        "text": "Gen1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "141": {
+    "varoff": 141,
+    "hex_off": "0x08d",
+    "op": "ONE_OF",
+    "qid": 529,
+    "prompt": "SATA Port 5 MODE",
+    "help": "Indicates The Highest Allowable Speed Of The SATA Port 5",
+    "options": [
+      {
+        "text": "Gen1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "142": {
+    "varoff": 142,
+    "hex_off": "0x08e",
+    "op": "ONE_OF",
+    "qid": 530,
+    "prompt": "SATA Port 6 MODE",
+    "help": "Indicates The Highest Allowable Speed Of The SATA Port 6",
+    "options": [
+      {
+        "text": "Gen1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "143": {
+    "varoff": 143,
+    "hex_off": "0x08f",
+    "op": "ONE_OF",
+    "qid": 531,
+    "prompt": "SATA Port 7 MODE",
+    "help": "Indicates The Highest Allowable Speed Of The SATA Port 7",
+    "options": [
+      {
+        "text": "Gen1",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Gen2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "144": {
+    "varoff": 144,
+    "hex_off": "0x090",
+    "op": "ONE_OF",
+    "qid": 532,
+    "prompt": "SATA Hot-Removabel Support",
+    "help": "Hot-Removal Enhancement Function",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "145": {
+    "varoff": 145,
+    "hex_off": "0x091",
+    "op": "ONE_OF",
+    "qid": 533,
+    "prompt": "SATA 6 AHCI Support",
+    "help": "Setting Only For AHCI Mode",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "146": {
+    "varoff": 146,
+    "hex_off": "0x092",
+    "op": "ONE_OF",
+    "qid": 534,
+    "prompt": "Int. Clk Differential Spread",
+    "help": "SB Spread Spectrum Item Have To Enable",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "147": {
+    "varoff": 147,
+    "hex_off": "0x093",
+    "op": "ONE_OF",
+    "qid": 535,
+    "prompt": "SATA MAXGEN2 CAP OPTION",
+    "help": "Set Sata Max Gen2 Mode",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "148": {
+    "varoff": 148,
+    "hex_off": "0x094",
+    "op": "ONE_OF",
+    "qid": 536,
+    "prompt": "SATA CLK Mode Option",
+    "help": "SATA Reference Clock Selector And Divider",
+    "options": [
+      {
+        "text": "EXT 25MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "INT 48MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "INT 100MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "149": {
+    "varoff": 149,
+    "hex_off": "0x095",
+    "op": "ONE_OF",
+    "qid": 537,
+    "prompt": "Aggressive Link PM Capability",
+    "help": "Indicates Whether Host Bus Adapter (HBA) Can Support Auto-Generating Link Requests To The Partial Or Slumber States When There Are No Commands To Process",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "150": {
+    "varoff": 150,
+    "hex_off": "0x096",
+    "op": "ONE_OF",
+    "qid": 538,
+    "prompt": "Port Multiplier Capability",
+    "help": "Indicates Whether Host Bus Adapter (HBA) Can Support A Port Multiplier",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "151": {
+    "varoff": 151,
+    "hex_off": "0x097",
+    "op": "ONE_OF",
+    "qid": 539,
+    "prompt": "SATA Ports Auto Clock Control",
+    "help": "EnableDisable SATA Ports Auto Clock Control",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "152": {
+    "varoff": 152,
+    "hex_off": "0x098",
+    "op": "ONE_OF",
+    "qid": 540,
+    "prompt": "SATA Partial State Capability",
+    "help": "Indicates Whether SATA Host Bus Adapter (HBA) Can Support Transitions To The Partial State",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "153": {
+    "varoff": 153,
+    "hex_off": "0x099",
+    "op": "ONE_OF",
+    "qid": 541,
+    "prompt": "SATA FIS Based Switching",
+    "help": "Indicates Whether SATA Host Bus Adapter (HBA) Can Support Port Multiplier FIS-Based Switching",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "154": {
+    "varoff": 154,
+    "hex_off": "0x09a",
+    "op": "ONE_OF",
+    "qid": 542,
+    "prompt": "SATA Command Completion Coalescing Support",
+    "help": "Indicates Whether SATA Host Bus Adapter (HBA) Can Support Command Completion Coalescing",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "155": {
+    "varoff": 155,
+    "hex_off": "0x09b",
+    "op": "ONE_OF",
+    "qid": 543,
+    "prompt": "SATA Slumber State Capability",
+    "help": "Indicates Whether SATA Host Bus Adapter (HBA) Can Support Transitions To The Slumber State",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "156": {
+    "varoff": 156,
+    "hex_off": "0x09c",
+    "op": "ONE_OF",
+    "qid": 544,
+    "prompt": "SATA MSI Capability Support",
+    "help": "SATA Controller Message-Based Interrupts Capability Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "157": {
+    "varoff": 157,
+    "hex_off": "0x09d",
+    "op": "ONE_OF",
+    "qid": 545,
+    "prompt": "SATA Target Support 8 Devices",
+    "help": "Indicates Whether SATA Target Support 8 Devices Function",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "158": {
+    "varoff": 158,
+    "hex_off": "0x09e",
+    "op": "ONE_OF",
+    "qid": 546,
+    "prompt": "Generic Mode",
+    "help": "Sata Disable Generic Mode",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "159": {
+    "varoff": 159,
+    "hex_off": "0x09f",
+    "op": "ONE_OF",
+    "qid": 547,
+    "prompt": "SATA AHCI Enclosure",
+    "help": "SATA AHCI Enclosure Management",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "160": {
+    "varoff": 160,
+    "hex_off": "0x0a0",
+    "op": "ONE_OF",
+    "qid": 548,
+    "prompt": "SATA SGPIO 0",
+    "help": "Enable/Disable SATA Serial General Purpose Input/Output (SGPIO) 0",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "161": {
+    "varoff": 161,
+    "hex_off": "0x0a1",
+    "op": "ONE_OF",
+    "qid": 549,
+    "prompt": "SATA SGPIO 1",
+    "help": "Enable/Disable SATA Serial General Purpose Input/Output (SGPIO) 1",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "162": {
+    "varoff": 162,
+    "hex_off": "0x0a2",
+    "op": "ONE_OF",
+    "qid": 550,
+    "prompt": "SATA PHY PLL",
+    "help": "SATA PHY PLL Dynamic Shutdown",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "163": {
+    "varoff": 163,
+    "hex_off": "0x0a3",
+    "op": "ONE_OF",
+    "qid": 551,
+    "prompt": "AC/DC Change Message Delivery",
+    "help": "Send A Message To CPU To Indicate The Power Mode (AC VS Battery)",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "164": {
+    "varoff": 164,
+    "hex_off": "0x0a4",
+    "op": "ONE_OF",
+    "qid": 552,
+    "prompt": "TimerTick Tracking",
+    "help": "Send A Message To CPU To Indicate The Latest Periodic Timer Interval",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "165": {
+    "varoff": 165,
+    "hex_off": "0x0a5",
+    "op": "ONE_OF",
+    "qid": 553,
+    "prompt": "Clock Interrupt Tag",
+    "help": "Mark The Periodic Timer Interrupt",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "166": {
+    "varoff": 166,
+    "hex_off": "0x0a6",
+    "op": "ONE_OF",
+    "qid": 554,
+    "prompt": "EHCI Traffic Handling",
+    "help": "Cause CPU To Break Out From C State When USB EHCI Has Pending Traffic",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "167": {
+    "varoff": 167,
+    "hex_off": "0x0a7",
+    "op": "ONE_OF",
+    "qid": 555,
+    "prompt": "Fusion Message C Multi-Core",
+    "help": "Track Of CPU C State By Monitoring Each Core's C State Message",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "168": {
+    "varoff": 168,
+    "hex_off": "0x0a8",
+    "op": "ONE_OF",
+    "qid": 556,
+    "prompt": "Fusion Message C State",
+    "help": "Enable The FCH C State Coordination Logic",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "170": {
+    "varoff": 170,
+    "hex_off": "0x0aa",
+    "op": "ONE_OF",
+    "qid": 557,
+    "prompt": "SPI Read Mode",
+    "help": "Change Dependent On Flash Part",
+    "options": [
+      {
+        "text": "Qual IO 1-4-4",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Qual IO 1-2-2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Qual IO 1-1-4",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Qual IO 1-1-2",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Fast Read",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Normal",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Default",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "173": {
+    "varoff": 173,
+    "hex_off": "0x0ad",
+    "op": "ONE_OF",
+    "qid": 558,
+    "prompt": "SPI 100MHz Support",
+    "help": "Change Dependent On Flash Part",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "171": {
+    "varoff": 171,
+    "hex_off": "0x0ab",
+    "op": "ONE_OF",
+    "qid": 559,
+    "prompt": "SPI Normal Speed",
+    "help": "Change Dependent On Flash Part",
+    "options": [
+      {
+        "text": "100MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "66MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "33MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "22MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "16.5MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "172": {
+    "varoff": 172,
+    "hex_off": "0x0ac",
+    "op": "ONE_OF",
+    "qid": 560,
+    "prompt": "SPI Fast Read Speed",
+    "help": "Change Dependent On Flash Part",
+    "options": [
+      {
+        "text": "100MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "66MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "33MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "22MHz",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Default",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "174": {
+    "varoff": 174,
+    "hex_off": "0x0ae",
+    "op": "ONE_OF",
+    "qid": 561,
+    "prompt": "SPI Burst Write",
+    "help": "Change Dependent On Flash Part",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "175": {
+    "varoff": 175,
+    "hex_off": "0x0af",
+    "op": "ONE_OF",
+    "qid": 562,
+    "prompt": "I2C 0 D3 Support",
+    "help": "I2C 0 D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "176": {
+    "varoff": 176,
+    "hex_off": "0x0b0",
+    "op": "ONE_OF",
+    "qid": 563,
+    "prompt": "I2C 1 D3 Support",
+    "help": "I2C 1 D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "177": {
+    "varoff": 177,
+    "hex_off": "0x0b1",
+    "op": "ONE_OF",
+    "qid": 564,
+    "prompt": "I2C 2 D3 Support",
+    "help": "I2C 2 D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "178": {
+    "varoff": 178,
+    "hex_off": "0x0b2",
+    "op": "ONE_OF",
+    "qid": 565,
+    "prompt": "I2C 3 D3 Support",
+    "help": "I2C 3 D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "179": {
+    "varoff": 179,
+    "hex_off": "0x0b3",
+    "op": "ONE_OF",
+    "qid": 566,
+    "prompt": "I2C 4 D3 Support",
+    "help": "I2C 4 D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "180": {
+    "varoff": 180,
+    "hex_off": "0x0b4",
+    "op": "ONE_OF",
+    "qid": 567,
+    "prompt": "I2C 5 D3 Support",
+    "help": "I2C 5 D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "181": {
+    "varoff": 181,
+    "hex_off": "0x0b5",
+    "op": "ONE_OF",
+    "qid": 568,
+    "prompt": "UART 0 D3 Support",
+    "help": "UART 0 D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "182": {
+    "varoff": 182,
+    "hex_off": "0x0b6",
+    "op": "ONE_OF",
+    "qid": 569,
+    "prompt": "UART 1 D3 Support",
+    "help": "UART 1 D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "183": {
+    "varoff": 183,
+    "hex_off": "0x0b7",
+    "op": "ONE_OF",
+    "qid": 570,
+    "prompt": "UART 2 D3 Support",
+    "help": "UART 2 D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "184": {
+    "varoff": 184,
+    "hex_off": "0x0b8",
+    "op": "ONE_OF",
+    "qid": 571,
+    "prompt": "UART 3 D3 Support",
+    "help": "UART 3 D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "185": {
+    "varoff": 185,
+    "hex_off": "0x0b9",
+    "op": "ONE_OF",
+    "qid": 572,
+    "prompt": "SATA D3 Support",
+    "help": "SATA D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "186": {
+    "varoff": 186,
+    "hex_off": "0x0ba",
+    "op": "ONE_OF",
+    "qid": 573,
+    "prompt": "EHCI D3 Support",
+    "help": "EHCI D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "187": {
+    "varoff": 187,
+    "hex_off": "0x0bb",
+    "op": "ONE_OF",
+    "qid": 574,
+    "prompt": "XHCI D3 Support",
+    "help": "XHCI D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "188": {
+    "varoff": 188,
+    "hex_off": "0x0bc",
+    "op": "ONE_OF",
+    "qid": 575,
+    "prompt": "SD D3 Support",
+    "help": "SD D3 Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "189": {
+    "varoff": 189,
+    "hex_off": "0x0bd",
+    "op": "ONE_OF",
+    "qid": 576,
+    "prompt": "S0I3",
+    "help": "S0I3 flag",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "190": {
+    "varoff": 190,
+    "hex_off": "0x0be",
+    "op": "ONE_OF",
+    "qid": 577,
+    "prompt": "Chipset Power Saving Features",
+    "help": "Chipset Power Saving Features",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "191": {
+    "varoff": 191,
+    "hex_off": "0x0bf",
+    "op": "ONE_OF",
+    "qid": 578,
+    "prompt": "SB Clock Spread Spectrum",
+    "help": "Enable/Disable CG1_PLL Spread Spectrum",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "203": {
+    "varoff": 203,
+    "hex_off": "0x0cb",
+    "op": "ONE_OF",
+    "qid": 579,
+    "prompt": "SB Clock Spread Spectrum Option",
+    "help": "Options for CG1_PLL Spread Spectrum",
+    "options": [
+      {
+        "text": "-0.362%",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "-0.375%",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "-0.400%",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "-0.425%",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "-0.450%",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "-0.475%",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "192": {
+    "varoff": 192,
+    "hex_off": "0x0c0",
+    "op": "ONE_OF",
+    "qid": 580,
+    "prompt": "High Precision Event Timer",
+    "help": "Enable or Disable the High Precision Event Timer.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "193": {
+    "varoff": 193,
+    "hex_off": "0x0c1",
+    "op": "ONE_OF",
+    "qid": 581,
+    "prompt": "MsiDis in HPET",
+    "help": "Expose MSI capability in HPET Capbility register",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "194": {
+    "varoff": 194,
+    "hex_off": "0x0c2",
+    "op": "ONE_OF",
+    "qid": 582,
+    "prompt": "_OSC For PCI0",
+    "help": "PCIe NativePcieSupport - Debug function.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "195": {
+    "varoff": 195,
+    "hex_off": "0x0c3",
+    "op": "ONE_OF",
+    "qid": 583,
+    "prompt": "USB Phy Power Down",
+    "help": "Support for S4/S5 USB PHY Power Down",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "196": {
+    "varoff": 196,
+    "hex_off": "0x0c4",
+    "op": "NUMERIC",
+    "qid": 584,
+    "prompt": "PCIB_CLK_Stop Override",
+    "help": "PCIB_CLK_Stop Override",
+    "options": [],
+    "defaults": [
+      {
+        "val": "000001",
+        "id": 0
+      },
+      {
+        "val": "010001",
+        "id": 0
+      }
+    ]
+  },
+  "198": {
+    "varoff": 198,
+    "hex_off": "0x0c6",
+    "op": "ONE_OF",
+    "qid": 585,
+    "prompt": "USB MSI Option",
+    "help": "USB MSI Capability",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "199": {
+    "varoff": 199,
+    "hex_off": "0x0c7",
+    "op": "ONE_OF",
+    "qid": 586,
+    "prompt": "LPC MSI Option",
+    "help": "LPC MSI Capability",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "200": {
+    "varoff": 200,
+    "hex_off": "0x0c8",
+    "op": "ONE_OF",
+    "qid": 587,
+    "prompt": "PCIBridge MSI Option",
+    "help": "PCI-PCI Bridge MSI Capability",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "201": {
+    "varoff": 201,
+    "hex_off": "0x0c9",
+    "op": "ONE_OF",
+    "qid": 588,
+    "prompt": "AB MSI Option",
+    "help": "ABlink MSI Capability",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "202": {
+    "varoff": 202,
+    "hex_off": "0x0ca",
+    "op": "ONE_OF",
+    "qid": 589,
+    "prompt": "SB C1E Support",
+    "help": "C1E Feature Need South Bridge And CPU Supported. This Item Open The C1E Of The SB Part.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "206": {
+    "varoff": 206,
+    "hex_off": "0x0ce",
+    "op": "ONE_OF",
+    "qid": 590,
+    "prompt": "SB Hardware Reduced Support",
+    "help": "Hardware Reduced ACPI Feature.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "205": {
+    "varoff": 205,
+    "hex_off": "0x0cd",
+    "op": "ONE_OF",
+    "qid": 591,
+    "prompt": "GPP Serial Debug Bus Enable",
+    "help": "GPP Serial Debug Bus Enable",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "608": {
+    "varoff": 608,
+    "hex_off": "0x260",
+    "op": "ONE_OF",
+    "qid": 593,
+    "prompt": "Remote Display Feature",
+    "help": "Enable/Disable Remote Display Feature Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "609": {
+    "varoff": 609,
+    "hex_off": "0x261",
+    "op": "ONE_OF",
+    "qid": 594,
+    "prompt": "Gnb Hd Audio",
+    "help": "Enable/Disable Gnb Hd Audio Support",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "604": {
+    "varoff": 604,
+    "hex_off": "0x25c",
+    "op": "ONE_OF",
+    "qid": 596,
+    "prompt": "UMA Mode",
+    "help": "UMA Mode",
+    "options": [
+      {
+        "text": "None",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "UMA_SPECIFIED",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "UMA_AUTO",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "605": {
+    "varoff": 605,
+    "hex_off": "0x25d",
+    "op": "ONE_OF",
+    "qid": 597,
+    "prompt": "Uma Version",
+    "help": "Uma Version",
+    "options": [
+      {
+        "text": "Legacy",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Non-Legacy",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "606": {
+    "varoff": 606,
+    "hex_off": "0x25e",
+    "op": "ONE_OF",
+    "qid": 599,
+    "prompt": "PSPP Policy",
+    "help": "PCIe Speed Power Policy",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Performance",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Balanced-High",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Balanced-Low",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Power Saving",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "610": {
+    "varoff": 610,
+    "hex_off": "0x262",
+    "op": "ONE_OF",
+    "qid": 600,
+    "prompt": "Above 4GB MMIO Limit",
+    "help": "Select Above 4GB MMIO Limit to 38~43 bits limit. This option works only when 'Above 4G decoding' is enabled",
+    "options": [
+      {
+        "text": "38bit (256GB)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "39bit (512GB)",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "40bit (1TB)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "41bit (2TB)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "42bit (4TB)",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "43bit (8TB)",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 9984
+      }
+    ]
+  },
+  "571": {
+    "varoff": 571,
+    "hex_off": "0x23b",
+    "op": "ONE_OF",
+    "qid": 602,
+    "prompt": "STIBP Status",
+    "help": "Single Thread Indirect Branch Predictor(STIBP) is a method to mitigate indirect branch target injection attacks on AMD products",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "548": {
+    "varoff": 548,
+    "hex_off": "0x224",
+    "op": "ONE_OF",
+    "qid": 603,
+    "prompt": "AC BACK",
+    "help": "Determine the state of  the system after the power returns after AC power loss.\r\nAlways Off = System stays off upon power return\r\nAlways On = System is turned on up power return\r\nMemory = System returns to last know awake state upon power return",
+    "options": [
+      {
+        "text": "Memory",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Always On",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Always Off",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 512
+      }
+    ]
+  },
+  "555": {
+    "varoff": 555,
+    "hex_off": "0x22b",
+    "op": "ONE_OF",
+    "qid": 604,
+    "prompt": "ErP",
+    "help": "Configure the ErP Mode configuration.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "556": {
+    "varoff": 556,
+    "hex_off": "0x22c",
+    "op": "ONE_OF",
+    "qid": 605,
+    "prompt": "Soft-Off by PWR-BTTN",
+    "help": "Configure the way to turn off the computer in MS-DOS mode via the power button.\r\nInstant Off = System will be turned off instantly using the power button.\r\nDelay 4 seconds = User must press and hold the power button for 4 seconds to turn off the system. If pressed for less than 4 seconds, it will enter suspend mode.",
+    "options": [
+      {
+        "text": "Instant-Off",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Delay 4 Sec.",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "557": {
+    "varoff": 557,
+    "hex_off": "0x22d",
+    "op": "ONE_OF",
+    "qid": 606,
+    "prompt": "Power Loading",
+    "help": "Enables or Disables dummy load.When the power supply is at low load, a self-protection will activate causing it to shutdown or fail.If this occurs, please set to Enabled.",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "561": {
+    "varoff": 561,
+    "hex_off": "0x231",
+    "op": "ONE_OF",
+    "qid": 607,
+    "prompt": "Resume by Alarm",
+    "help": "Enable or disable System wake on alarm event. When enabled, System will wake on the da:hr:min:sec specified",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "562": {
+    "varoff": 562,
+    "hex_off": "0x232",
+    "op": "NUMERIC",
+    "qid": 608,
+    "prompt": "Wake up day",
+    "help": "Select the day(s) of the month you want for the system to wake up.\r\nSelect day of the month i.e. 1-31. Select 0 to specify every day.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "563": {
+    "varoff": 563,
+    "hex_off": "0x233",
+    "op": "NUMERIC",
+    "qid": 609,
+    "prompt": "Wake up hour",
+    "help": "Select the hour of the day you want for the system to wake up.\r\nSpecify from 0-23.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "564": {
+    "varoff": 564,
+    "hex_off": "0x234",
+    "op": "NUMERIC",
+    "qid": 610,
+    "prompt": "Wake up minute",
+    "help": "Select the minute settings for the system to wake up.\r\nSpecify from 0-59.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "565": {
+    "varoff": 565,
+    "hex_off": "0x235",
+    "op": "NUMERIC",
+    "qid": 611,
+    "prompt": "Wake up second",
+    "help": "Select the seconds settings for the system to wake up.\r\nSpecify from 0-59.",
+    "options": [],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "624": {
+    "varoff": 624,
+    "hex_off": "0x270",
+    "op": "ONE_OF",
+    "qid": 612,
+    "prompt": "Wake on LAN",
+    "help": "Enable or Disable onboard LAN to wake the system.",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 32,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 256
+      }
+    ]
+  },
+  "640": {
+    "varoff": 640,
+    "hex_off": "0x280",
+    "op": "ONE_OF",
+    "qid": 10800,
+    "prompt": "CEC 2019 Ready",
+    "help": "Enabled/Disabled CEC 2019 Ready function",
+    "options": [
+      {
+        "text": "Disabled",
+        "flags": 48,
+        "type": 0
+      },
+      {
+        "text": "Enabled",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": []
+  },
+  "613": {
+    "varoff": 613,
+    "hex_off": "0x265",
+    "op": "ONE_OF",
+    "qid": 620,
+    "prompt": "Preferred Operating Mode",
+    "help": "'Auto' means BIOS remembers which mode you exited last time.",
+    "options": [
+      {
+        "text": "Auto",
+        "flags": 32,
+        "type": 0
+      },
+      {
+        "text": "Easy Mode",
+        "flags": 0,
+        "type": 0
+      },
+      {
+        "text": "Advanced Mode",
+        "flags": 0,
+        "type": 0
+      }
+    ],
+    "defaults": [
+      {
+        "val": "0000",
+        "id": 0
+      }
+    ]
+  },
+  "552": {
+    "varoff": 552,
+    "hex_off": "0x228",
+    "op": "NUMERIC",
+    "qid": 624,
+    "prompt": "Unknown_0x228",
+    "help": "",
+    "options": [],
+    "defaults": []
+  },
+  "567": {
+    "varoff": 567,
+    "hex_off": "0x237",
+    "op": "NUMERIC",
+    "qid": 669,
+    "prompt": "Unknown_0x237",
+    "help": "",
+    "options": [],
+    "defaults": []
+  },
+  "84": {
+    "varoff": 84,
+    "hex_off": "0x054",
+    "op": "NUMERIC",
+    "qid": 670,
+    "prompt": "Unknown_0x54",
+    "help": "",
+    "options": [],
+    "defaults": []
+  },
+  "286": {
+    "varoff": 286,
+    "hex_off": "0x11e",
+    "op": "NUMERIC",
+    "qid": 671,
+    "prompt": "Unknown_0x11e",
+    "help": "",
+    "options": [],
+    "defaults": []
+  },
+  "22": {
+    "varoff": 22,
+    "hex_off": "0x016",
+    "op": "NUMERIC",
+    "qid": 673,
+    "prompt": "Unknown_0x16",
+    "help": "",
+    "options": [],
+    "defaults": []
+  },
+  "21": {
+    "varoff": 21,
+    "hex_off": "0x015",
+    "op": "NUMERIC",
+    "qid": 674,
+    "prompt": "Unknown_0x15",
+    "help": "",
+    "options": [],
+    "defaults": []
+  },
+  "18": {
+    "varoff": 18,
+    "hex_off": "0x012",
+    "op": "NUMERIC",
+    "qid": 675,
+    "prompt": "Unknown_0x12",
+    "help": "",
+    "options": [],
+    "defaults": []
+  },
+  "23": {
+    "varoff": 23,
+    "hex_off": "0x017",
+    "op": "NUMERIC",
+    "qid": 678,
+    "prompt": "Unknown_0x17",
+    "help": "",
+    "options": [],
+    "defaults": []
+  },
+  "27": {
+    "varoff": 27,
+    "hex_off": "0x01b",
+    "op": "NUMERIC",
+    "qid": 679,
+    "prompt": "Unknown_0x1b",
+    "help": "",
+    "options": [],
+    "defaults": []
+  },
+  "25": {
+    "varoff": 25,
+    "hex_off": "0x019",
+    "op": "NUMERIC",
+    "qid": 680,
+    "prompt": "Unknown_0x19",
+    "help": "",
+    "options": [],
+    "defaults": []
+  }
+}

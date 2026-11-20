@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Firmware images and binary ROM dumps (multi-megabyte proprietary blobs)
+images/
+backups/
+cartography/
+scratches/
+extracted/
+
+# Temporary logs
+*.log
+*.err
+*.tmp
+
+# IDE / local configs
+.vscode/
+.idea/
+.agents/
