@@ -115,9 +115,13 @@ class QemuBiosRunner:
     def build_qemu_cmd(self, log_path: Path) -> List[str]:
         if self.mode == "peim":
             # Direct 32-bit PEIM execution via Unicorn harness
-            harness_py = Path("/run/media/julian/ML6/uefi-peim-harness/unicorn_peim.py")
-            if not harness_py.exists():
-                harness_py = Path(__file__).resolve().parent.parent / "scratches" / "unicorn_peim.py"
+            repo_root = Path(__file__).resolve().parent.parent
+            candidates = [
+                repo_root / "submodules" / "uefi-peim-harness" / "unicorn_peim.py",
+                Path("/run/media/julian/ML6/uefi-peim-harness/unicorn_peim.py"),
+                repo_root / "scratches" / "unicorn_peim.py",
+            ]
+            harness_py = next((p for p in candidates if p.exists()), candidates[0])
             return ["python3", str(harness_py), str(self.image_path), "200000"]
 
         if self.mode == "uefi":

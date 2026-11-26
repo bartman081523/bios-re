@@ -1,4 +1,7 @@
 [submodule "rea"]
-	path = rea
+	path = submodules/rea
 	url = https://github.com/bartman081523/rea.git
 	branch = feat/firmware-emulation
+[submodule "submodules/uefi-peim-harness"]
+	path = submodules/uefi-peim-harness
+	url = https://github.com/bartman081523/uefi-peim-harness.git
