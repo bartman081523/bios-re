@@ -1,0 +1,4 @@
+[submodule "rea"]
+	path = rea
+	url = https://github.com/bartman081523/rea.git
+	branch = feat/firmware-emulation
